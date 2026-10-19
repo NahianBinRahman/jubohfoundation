@@ -1,13 +1,11 @@
 "use client"
 
-import React, { useState } from "react"
+import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Play, X } from "lucide-react"
 import { motion } from "motion/react"
 
 export function HomeHero() {
-  const [videoOpen, setVideoOpen] = useState(false)
 
   return (
     <section className="relative w-full min-h-[620px] sm:min-h-[700px] md:min-h-[760px] lg:min-h-[820px] bg-[#1a1a1a] text-white flex items-center justify-center pt-24 sm:pt-28 md:pt-36 pb-36 sm:pb-44 md:pb-52 overflow-hidden">
@@ -57,58 +55,22 @@ export function HomeHero() {
           through culturally relevant programs, housing, and global missions.
         </motion.p>
 
-        {/* Dual CTA Buttons (Solid Gold + Circular Play Button) */}
+        {/* Primary CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-wrap items-center justify-center gap-6 sm:gap-8"
+          className="flex items-center justify-center"
         >
           {/* Solid Gold Button */}
           <Link
             href="/donate"
-            className="inline-flex items-center justify-center bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-xs uppercase tracking-widest px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
+            className="inline-flex items-center justify-center bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-xs uppercase tracking-widest px-9 py-4 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
           >
             DONATE NOW
           </Link>
-
-          {/* Watch Video Circular Trigger */}
-          <button
-            onClick={() => setVideoOpen(true)}
-            className="inline-flex items-center gap-3.5 group cursor-pointer focus:outline-none"
-            aria-label="Watch video presentation"
-          >
-            <div className="w-12 h-12 rounded-full bg-white text-[#222222] flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-[#F6B83E] transition-all duration-300">
-              <Play className="w-5 h-5 fill-current ml-0.5" />
-            </div>
-            <span className="text-white font-bold text-xs uppercase tracking-widest group-hover:text-[#F6B83E] transition-colors">
-              WATCH VIDEO
-            </span>
-          </button>
         </motion.div>
       </div>
-
-      {/* Video Modal */}
-      {videoOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4 backdrop-blur-xs">
-          <div className="relative w-full max-w-3xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
-            <button
-              onClick={() => setVideoOpen(false)}
-              className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-[#F6B83E] hover:text-[#222222] transition-colors"
-              aria-label="Close video"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1"
-              title="JUBOH Foundation Mission Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
-      )}
     </section>
   )
 }
