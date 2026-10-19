@@ -13,6 +13,7 @@ import {
 import { Menu, ChevronDown, Heart, Phone, Mail, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { BrandLogo } from "@/components/common/brand-logo"
+import { motion } from "motion/react"
 import { SITE_CONFIG, type NavItem } from "@/data/site-data"
 import { cn } from "@/lib/utils"
 
@@ -60,18 +61,24 @@ export function MobileNavigation() {
 
           {/* Nav List */}
           <div className="flex-1 overflow-y-auto px-5 py-4 space-y-1">
-            {SITE_CONFIG.navItems.map((item: NavItem) => {
+            {SITE_CONFIG.navItems.map((item: NavItem, index: number) => {
               const isActive = pathname === item.href
               const hasChildren = Boolean(item.children && item.children.length > 0)
               const isExpanded = expandedDropdown === item.label
 
               if (hasChildren) {
                 return (
-                  <div key={item.label} className="border-b border-neutral-100 pb-1">
+                  <motion.div
+                    key={item.label}
+                    initial={{ opacity: 0, x: 14 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.04 * index, duration: 0.25, ease: "easeOut" }}
+                    className="border-b border-neutral-100 pb-1"
+                  >
                     <button
                       onClick={() => toggleDropdown(item.label)}
                       className={cn(
-                        "w-full flex items-center justify-between py-2.5 text-xs uppercase font-bold tracking-wider transition-colors",
+                        "w-full flex items-center justify-between py-2.5 text-xs uppercase font-bold tracking-wider transition-colors active:scale-[0.98]",
                         isExpanded ? "text-[#F6B83E]" : "text-[#222222]"
                       )}
                     >
@@ -85,7 +92,12 @@ export function MobileNavigation() {
                     </button>
 
                     {isExpanded && (
-                      <div className="pl-3 pb-2 space-y-1 border-l-2 border-[#F6B83E]/40 ml-2">
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        transition={{ duration: 0.2 }}
+                        className="pl-3 pb-2 space-y-1 border-l-2 border-[#F6B83E]/40 ml-2"
+                      >
                         {item.children?.map((sub) => {
                           const isSubActive = pathname === sub.href
                           return (
@@ -94,7 +106,7 @@ export function MobileNavigation() {
                               href={sub.href}
                               onClick={() => setOpen(false)}
                               className={cn(
-                                "block py-1.5 text-xs transition-colors",
+                                "block py-1.5 text-xs transition-colors active:scale-[0.98]",
                                 isSubActive
                                   ? "text-[#F6B83E] font-semibold"
                                   : "text-[#555555] hover:text-[#222222]"
@@ -104,14 +116,21 @@ export function MobileNavigation() {
                             </Link>
                           )
                         })}
-                      </div>
+                      </motion.div>
                     )}
-                  </div>
+                  </motion.div>
                 )
               }
 
               return (
-                <div key={item.label} className="border-b border-neutral-100 last:border-none">
+                <motion.div
+                  key={item.label}
+                  initial={{ opacity: 0, x: 14 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.04 * index, duration: 0.25, ease: "easeOut" }}
+                  whileTap={{ scale: 0.98 }}
+                  className="border-b border-neutral-100 last:border-none"
+                >
                   <Link
                     href={item.href}
                     onClick={() => setOpen(false)}
@@ -124,19 +143,26 @@ export function MobileNavigation() {
                   >
                     {item.label}
                   </Link>
-                </div>
+                </motion.div>
               )
             })}
           </div>
 
           {/* Sheet Footer with Contact & Giving Button */}
           <div className="p-5 border-t border-[#E8E5DD] bg-[#F8F6F1] space-y-3">
-            <Link href="/donate" onClick={() => setOpen(false)} className="block w-full">
-              <Button variant="default" className="w-full font-bold text-xs gap-2 py-5 shadow-xs">
-                <Heart className="w-4 h-4 fill-current" />
-                MAKE A DONATION
-              </Button>
-            </Link>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.28, duration: 0.3 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              <Link href="/donate" onClick={() => setOpen(false)} className="block w-full">
+                <Button variant="default" className="w-full font-bold text-xs gap-2 py-5 shadow-xs">
+                  <Heart className="w-4 h-4 fill-current" />
+                  MAKE A DONATION
+                </Button>
+              </Link>
+            </motion.div>
 
             <div className="space-y-1.5 pt-2 text-[11px] text-[#777777]">
               <div className="flex items-center gap-2">

@@ -29,8 +29,9 @@ export function TestimonialsGrid({
           <ScrollItem key={item.id} direction="up" distance={28} className="h-full">
             <motion.div
               whileHover={{ y: -6 }}
+              whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="h-full bg-[#f4efe8] rounded-xl p-8 sm:p-9 border border-[#eae3d8] flex flex-col justify-between shadow-2xs hover:shadow-xl transition-shadow duration-300 group"
+              className="h-full bg-[#f4efe8] rounded-xl p-8 sm:p-9 border border-[#eae3d8] flex flex-col justify-between shadow-2xs hover:shadow-xl transition-shadow duration-300 group cursor-pointer"
             >
               <div>
                 {/* Distinctive Solid Gold Double Quotation Mark (Matching Template) */}

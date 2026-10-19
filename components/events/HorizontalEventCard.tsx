@@ -19,8 +19,9 @@ export function HorizontalEventCard({ event, index = 0 }: HorizontalEventCardPro
   return (
     <motion.article
       whileHover={{ y: -4 }}
+      whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.25, ease: "easeOut" }}
-      className="bg-white rounded-2xl border border-[#EAE7DF] shadow-[0_4px_24px_-4px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(0,0,0,0.12)] hover:border-[#D8D4C8] transition-all duration-300 p-6 sm:p-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-6 sm:gap-8 group"
+      className="bg-white rounded-2xl border border-[#EAE7DF] shadow-[0_4px_24px_-4px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(0,0,0,0.12)] hover:border-[#D8D4C8] transition-all duration-300 p-6 sm:p-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-6 sm:gap-8 group cursor-pointer"
     >
       {/* Left Date Block (Coral / Gold / Teal) */}
       <div

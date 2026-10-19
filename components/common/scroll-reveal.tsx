@@ -2,7 +2,6 @@
 
 import React from "react"
 import { motion, type HTMLMotionProps, type Variants } from "motion/react"
-import { cn } from "@/lib/utils"
 
 interface ScrollRevealProps extends HTMLMotionProps<"div"> {
   children: React.ReactNode
@@ -13,17 +12,19 @@ interface ScrollRevealProps extends HTMLMotionProps<"div"> {
   once?: boolean
   className?: string
   scale?: number
+  whileTapScale?: number
 }
 
 export function ScrollReveal({
   children,
   direction = "up",
-  distance = 32,
+  distance = 28,
   delay = 0,
-  duration = 0.65,
+  duration = 0.6,
   once = true,
   className,
   scale = 1,
+  whileTapScale,
   ...props
 }: ScrollRevealProps) {
   const getInitialPosition = () => {
@@ -49,7 +50,7 @@ export function ScrollReveal({
         opacity: 0,
         x: initialPos.x,
         y: initialPos.y,
-        scale: scale !== 1 ? scale : 1,
+        scale: scale !== 1 ? scale : 0.98,
       }}
       whileInView={{
         opacity: 1,
@@ -57,11 +58,12 @@ export function ScrollReveal({
         y: 0,
         scale: 1,
       }}
-      viewport={{ once, margin: "-60px" }}
+      whileTap={whileTapScale ? { scale: whileTapScale } : undefined}
+      viewport={{ once, margin: "0px 0px -40px 0px", amount: 0.15 }}
       transition={{
         duration,
         delay,
-        ease: [0.22, 1, 0.36, 1], // Smooth custom cubic bezier
+        ease: [0.16, 1, 0.3, 1], // Ultra-smooth responsive cubic bezier
       }}
       className={className}
       {...props}
@@ -81,8 +83,8 @@ interface ScrollStaggerProps extends HTMLMotionProps<"div"> {
 
 export function ScrollStagger({
   children,
-  staggerDelay = 0.12,
-  delayChildren = 0.05,
+  staggerDelay = 0.09,
+  delayChildren = 0.04,
   once = true,
   className,
   ...props
@@ -103,7 +105,7 @@ export function ScrollStagger({
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once, margin: "-60px" }}
+      viewport={{ once, margin: "0px 0px -40px 0px", amount: 0.1 }}
       className={className}
       {...props}
     >
@@ -118,14 +120,16 @@ interface ScrollItemProps extends HTMLMotionProps<"div"> {
   distance?: number
   duration?: number
   className?: string
+  scale?: number
 }
 
 export function ScrollItem({
   children,
   direction = "up",
-  distance = 28,
-  duration = 0.6,
+  distance = 24,
+  duration = 0.55,
   className,
+  scale = 0.98,
   ...props
 }: ScrollItemProps) {
   const getInitialPosition = () => {
@@ -150,14 +154,16 @@ export function ScrollItem({
       opacity: 0,
       x: initialPos.x,
       y: initialPos.y,
+      scale,
     },
     visible: {
       opacity: 1,
       x: 0,
       y: 0,
+      scale: 1,
       transition: {
         duration,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.16, 1, 0.3, 1],
       },
     },
   }

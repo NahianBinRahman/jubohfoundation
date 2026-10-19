@@ -105,8 +105,9 @@ export function ImpactStatement() {
                 <ScrollItem key={area.number} direction="up" distance={24} className="h-full">
                   <motion.div
                     whileHover={{ y: -4 }}
+                    whileTap={{ scale: 0.98 }}
                     transition={{ duration: 0.2 }}
-                    className="p-5 rounded-md bg-white/5 border border-white/10 hover:border-[#F6B83E]/60 hover:bg-white/10 transition-colors duration-200 h-full flex flex-col justify-between"
+                    className="p-5 rounded-md bg-white/5 border border-white/10 hover:border-[#F6B83E]/60 hover:bg-white/10 transition-colors duration-200 h-full flex flex-col justify-between cursor-pointer"
                   >
                     <div>
                       <span className="font-serif text-2xl font-bold text-[#F6B83E] block mb-2 opacity-90">

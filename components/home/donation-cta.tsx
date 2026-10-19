@@ -79,7 +79,7 @@ export function DonationCTA() {
                         setCustomAmount("")
                       }}
                       className={cn(
-                        "px-4 py-2.5 rounded-sm text-xs font-bold transition-all duration-200 border cursor-pointer",
+                        "px-4 py-2.5 rounded-sm text-xs font-bold transition-all duration-150 border cursor-pointer active:scale-95",
                         selectedAmount === amt
                           ? "bg-[#F6B83E] text-[#222222] border-[#F6B83E] shadow-xs"
                           : "bg-[#F8F6F1] text-[#222222] border-[#E8E5DD] hover:border-[#F6B83E]"
@@ -92,7 +92,7 @@ export function DonationCTA() {
                     type="button"
                     onClick={() => setSelectedAmount("custom")}
                     className={cn(
-                      "px-4 py-2.5 rounded-sm text-xs font-bold transition-all duration-200 border cursor-pointer",
+                      "px-4 py-2.5 rounded-sm text-xs font-bold transition-all duration-150 border cursor-pointer active:scale-95",
                       selectedAmount === "custom"
                         ? "bg-[#F6B83E] text-[#222222] border-[#F6B83E] shadow-xs"
                         : "bg-[#F8F6F1] text-[#222222] border-[#E8E5DD] hover:border-[#F6B83E]"

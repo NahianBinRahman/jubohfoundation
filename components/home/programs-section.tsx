@@ -91,8 +91,9 @@ export function ProgramsSection() {
             <ScrollItem key={program.id} direction="up" distance={36} className="h-full">
               <motion.div
                 whileHover={{ y: -8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="h-full bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-xl hover:border-[#F6B83E]/50 transition-shadow duration-300 flex flex-col justify-between group"
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
+                className="h-full bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-xl hover:border-[#F6B83E]/50 transition-shadow duration-300 flex flex-col justify-between group cursor-pointer"
               >
                 <div>
                   {/* Photographic Header Container */}

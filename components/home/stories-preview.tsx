@@ -36,8 +36,9 @@ export function StoriesPreview({ stories }: StoriesPreviewProps) {
               <ScrollItem key={story.id} direction="up" distance={32} className="h-full">
                 <motion.article
                   whileHover={{ y: -6 }}
+                  whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.25 }}
-                  className="h-full bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-xl hover:border-[#F6B83E]/50 transition-shadow duration-300 group flex flex-col justify-between"
+                  className="h-full bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-xl hover:border-[#F6B83E]/50 transition-shadow duration-300 group flex flex-col justify-between cursor-pointer"
                 >
                   <div>
                     <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100">

@@ -19,8 +19,9 @@ export function OverlappingCards() {
         <ScrollItem direction="up" distance={40} className="h-full">
           <motion.div
             whileHover={{ y: -8 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="h-full bg-white p-8 sm:p-9 rounded-sm shadow-xl border border-neutral-100 flex flex-col items-center text-center justify-between transition-shadow duration-300 hover:shadow-2xl group"
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="h-full bg-white p-8 sm:p-9 rounded-sm shadow-xl border border-neutral-100 flex flex-col items-center text-center justify-between transition-shadow duration-300 hover:shadow-2xl group cursor-pointer"
           >
             <div className="flex flex-col items-center">
               {/* Outline Volunteer Group Icon with gentle hover scale */}
@@ -68,8 +69,9 @@ export function OverlappingCards() {
         <ScrollItem direction="up" distance={40} className="h-full">
           <motion.div
             whileHover={{ y: -8 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="h-full bg-white p-8 sm:p-9 rounded-sm shadow-xl border border-neutral-100 flex flex-col items-center text-center justify-between transition-shadow duration-300 hover:shadow-2xl group"
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="h-full bg-white p-8 sm:p-9 rounded-sm shadow-xl border border-neutral-100 flex flex-col items-center text-center justify-between transition-shadow duration-300 hover:shadow-2xl group cursor-pointer"
           >
             <div className="flex flex-col items-center">
               {/* Outline Handshake & Coin Icon with gentle hover scale */}
@@ -104,7 +106,7 @@ export function OverlappingCards() {
 
             <Link
               href="/programs"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-xs uppercase tracking-widest py-3 px-8 transition-all duration-200 shadow-sm hover:shadow-md"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-xs uppercase tracking-widest py-3 px-8 transition-all duration-200 shadow-sm hover:shadow-md active:scale-95"
             >
               CHECK NOW
             </Link>
@@ -117,8 +119,9 @@ export function OverlappingCards() {
         <ScrollItem direction="up" distance={40} className="md:col-span-2 h-full">
           <motion.div
             whileHover={{ y: -8 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="h-full grid grid-cols-1 sm:grid-cols-2 rounded-sm shadow-xl overflow-hidden transition-shadow duration-300 hover:shadow-2xl group"
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="h-full grid grid-cols-1 sm:grid-cols-2 rounded-sm shadow-xl overflow-hidden transition-shadow duration-300 hover:shadow-2xl group cursor-pointer"
           >
             {/* Left 50%: Solid Gold Panel */}
             <div className="bg-[#F6B83E] p-8 sm:p-9 flex flex-col items-center text-center justify-between text-[#222222]">

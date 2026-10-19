@@ -123,7 +123,12 @@ export function AboutPreview() {
             {/* Bottom Solid Gold Stat Card with Reveal */}
             <ScrollReveal direction="up" distance={24} delay={0.2} scale={0.96} duration={0.65}>
               <div className="pt-2">
-                <div className="bg-[#F6B83E] px-8 py-6 inline-flex items-center gap-6 shadow-md rounded-xs transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.97 }}
+                  transition={{ duration: 0.2 }}
+                  className="bg-[#F6B83E] px-8 py-6 inline-flex items-center gap-6 shadow-md rounded-xs transition-shadow duration-300 hover:shadow-xl cursor-pointer select-none"
+                >
                   {/* Money Sack with Stacks of Coins SVG Icon */}
                   <div className="text-[#222222] shrink-0">
                     <svg
@@ -154,7 +159,7 @@ export function AboutPreview() {
                       Successfull Campaigns
                     </span>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </ScrollReveal>
           </div>

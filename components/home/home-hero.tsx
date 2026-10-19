@@ -62,13 +62,20 @@ export function HomeHero() {
           transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="flex items-center justify-center"
         >
-          {/* Solid Gold Button */}
-          <Link
-            href="/donate"
-            className="inline-flex items-center justify-center bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-xs uppercase tracking-widest px-9 py-4 transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
+          {/* Solid Gold Button with ambient float & tap response */}
+          <motion.div
+            animate={{ y: [0, -4, 0] }}
+            transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.96 }}
           >
-            DONATE NOW
-          </Link>
+            <Link
+              href="/donate"
+              className="inline-flex items-center justify-center bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-xs uppercase tracking-widest px-9 py-4 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer"
+            >
+              DONATE NOW
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </section>
