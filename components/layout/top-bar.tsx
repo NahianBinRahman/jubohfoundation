@@ -1,26 +1,15 @@
 import React from "react"
 import Link from "next/link"
-import { Mail, Phone, MapPin, Sparkles } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
 import { MobileNavigation } from "@/components/layout/mobile-navigation"
+import { BrandLogo } from "@/components/common/brand-logo"
 
 export function TopBar() {
   return (
     <div className="bg-[#222222] text-white border-b border-neutral-800 relative z-30">
       <div className="container-custom py-3 sm:py-4 flex items-center justify-between gap-4">
-        {/* Authentic Juboh Foundation Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0 group">
-          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#F6B83E]/15 border border-[#F6B83E]/40 flex items-center justify-center text-[#F6B83E] group-hover:bg-[#F6B83E] group-hover:text-[#222222] transition-colors duration-200">
-            <Sparkles className="w-5 h-5 fill-current" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-white group-hover:text-[#F6B83E] transition-colors">
-              JUBOH FOUNDATION
-            </span>
-            <span className="text-[10px] tracking-[0.2em] uppercase text-[#F6B83E] font-medium -mt-0.5">
-              Excellence In Everything
-            </span>
-          </div>
-        </Link>
+        {/* Authentic Juboh Foundation Logo with Hands In Circle Emblem */}
+        <BrandLogo variant="dark" iconSize="md" />
 
         {/* Center: Contact Information Blocks (Visible on Medium and Large Screens) */}
         <div className="hidden md:flex items-center gap-6 lg:gap-8 text-left">

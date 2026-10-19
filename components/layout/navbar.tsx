@@ -3,8 +3,9 @@
 import React, { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Sparkles, Menu, X, ChevronDown, Heart } from "lucide-react"
+import { Menu, X, ChevronDown, Heart } from "lucide-react"
 import { SITE_CONFIG } from "@/data/site-data"
+import { BrandLogo } from "@/components/common/brand-logo"
 import { cn } from "@/lib/utils"
 
 export function Navbar() {
@@ -14,20 +15,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E8E5DD] shadow-xs">
       <div className="container-custom flex items-center justify-between h-20">
-        {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-full bg-[#F6B83E]/15 border border-[#F6B83E]/40 flex items-center justify-center text-[#F6B83E] group-hover:bg-[#F6B83E] group-hover:text-[#222222] transition-colors duration-200">
-            <Sparkles className="w-5 h-5 fill-current" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-serif text-xl tracking-tight font-bold text-[#222222]">
-              JUBOH FOUNDATION
-            </span>
-            <span className="text-[10px] tracking-[0.2em] uppercase text-[#777777] font-medium -mt-0.5">
-              Excellence In Everything
-            </span>
-          </div>
-        </Link>
+        {/* Brand Logo with Hands In Circle Emblem */}
+        <BrandLogo variant="light" iconSize="md" />
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center gap-7">

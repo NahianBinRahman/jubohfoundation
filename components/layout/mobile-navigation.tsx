@@ -10,8 +10,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Menu, ChevronDown, Sparkles, Heart, Phone, Mail, MapPin } from "lucide-react"
+import { Menu, ChevronDown, Heart, Phone, Mail, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { BrandLogo } from "@/components/common/brand-logo"
 import { SITE_CONFIG, type NavItem } from "@/data/site-data"
 import { cn } from "@/lib/utils"
 
@@ -52,18 +53,8 @@ export function MobileNavigation() {
         <SheetContent side="right" className="w-[310px] sm:w-[360px] p-0 flex flex-col bg-white">
           {/* Header */}
           <SheetHeader className="p-5 border-b border-[#E8E5DD] bg-[#F8F6F1]">
-            <SheetTitle className="flex items-center gap-2.5 text-left">
-              <div className="w-8 h-8 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center">
-                <Sparkles className="w-4 h-4 fill-current" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-base font-bold text-[#222222] leading-tight">
-                  JUBOH FOUNDATION
-                </span>
-                <span className="text-[9px] tracking-wider uppercase text-[#777777]">
-                  Excellence in Everything
-                </span>
-              </div>
+            <SheetTitle className="text-left">
+              <BrandLogo variant="light" iconSize="sm" href="/" />
             </SheetTitle>
           </SheetHeader>
 

@@ -2,9 +2,10 @@
 
 import React from "react"
 import Link from "next/link"
-import { Sparkles, Mail, MapPin, Phone, Heart } from "lucide-react"
+import { Mail, MapPin, Phone, Heart } from "lucide-react"
 import { SITE_CONFIG, CORE_PROGRAMS } from "@/data/site-data"
 import { NewsletterForm } from "@/components/common/newsletter-form"
+import { LogoIcon } from "@/components/common/logo-icon"
 
 export function Footer() {
   return (
@@ -164,8 +165,8 @@ export function Footer() {
         {/* Bottom Bar: Logo, Copyright & Legal */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-[#777777] gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-7 h-7 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center">
-              <Sparkles className="w-4 h-4 fill-current" />
+            <div className="w-8 h-8 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center border border-[#F6B83E]/30 shadow-2xs">
+              <LogoIcon className="w-5 h-5" variant="gold" />
             </div>
             <span className="font-serif text-sm font-bold text-white tracking-tight">
               JUBOH FOUNDATION
