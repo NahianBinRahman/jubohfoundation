@@ -5,7 +5,7 @@ import { IMAGES } from "@/lib/images"
 
 export function DonationStatement() {
   return (
-    <section className="relative py-24 sm:py-32 bg-[#222222] text-white overflow-hidden">
+    <section className="relative py-24 sm:py-32 bg-[#111827] text-white overflow-hidden">
       {/* Background Image with Dark Gradient */}
       <Image
         src={IMAGES.aboutHero.src}
@@ -14,11 +14,11 @@ export function DonationStatement() {
         sizes="100vw"
         className="object-cover object-center opacity-25"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#222222] via-[#222222]/85 to-[#222222]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#111827] via-[#111827]/85 to-[#111827]" />
 
       <div className="container-custom relative z-10 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
-          <span className="text-xs uppercase font-bold tracking-[0.25em] text-[#F6B83E] block">
+          <span className="text-xs uppercase font-bold tracking-[0.25em] text-[#C5A059] block">
             JUBOH Foundation Philosophy
           </span>
 

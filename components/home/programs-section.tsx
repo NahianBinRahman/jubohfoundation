@@ -93,7 +93,7 @@ export function ProgramsSection() {
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
-                className="h-full bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-xl hover:border-[#F6B83E]/50 transition-shadow duration-300 flex flex-col justify-between group cursor-pointer"
+                className="h-full bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-xl hover:border-[#C5A059]/50 transition-shadow duration-300 flex flex-col justify-between group cursor-pointer"
               >
                 <div>
                   {/* Photographic Header Container */}
@@ -105,17 +105,17 @@ export function ProgramsSection() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover object-center transition-transform duration-700 group-hover:scale-108"
                     />
-                    <div className="absolute top-3 left-3 bg-[#222222]/90 backdrop-blur-xs text-[#F6B83E] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-xs">
+                    <div className="absolute top-3 left-3 bg-[#111827]/90 backdrop-blur-xs text-[#C5A059] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-xs">
                       {program.category}
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="p-6">
-                    <h3 className="font-serif text-xl font-bold text-[#222222] mb-3 group-hover:text-[#F6B83E] transition-colors leading-snug">
+                    <h3 className="font-serif text-xl font-bold text-[#111827] mb-3 group-hover:text-[#C5A059] transition-colors leading-snug">
                       {program.title}
                     </h3>
-                    <p className="text-xs text-[#777777] leading-relaxed">
+                    <p className="text-xs text-[#555D68] leading-relaxed">
                       {program.description}
                     </p>
                   </div>
@@ -125,7 +125,7 @@ export function ProgramsSection() {
                 <div className="px-6 pb-6 pt-2 border-t border-neutral-100">
                   <Link
                     href={program.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-[#222222] group-hover:text-[#F6B83E] transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-[#111827] group-hover:text-[#C5A059] transition-colors"
                   >
                     <span>LEARN MORE</span>
                     <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />

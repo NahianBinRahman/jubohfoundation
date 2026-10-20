@@ -43,7 +43,7 @@ export function MobileNavigation() {
             <Button
               variant="outline"
               size="icon"
-              className="border-neutral-300 text-[#222222] hover:bg-[#F8F6F1]"
+              className="border-neutral-300 text-[#111827] hover:bg-[#F8F6F1]"
               aria-label="Open Navigation Menu"
             >
               <Menu className="w-5 h-5" />
@@ -79,14 +79,14 @@ export function MobileNavigation() {
                       onClick={() => toggleDropdown(item.label)}
                       className={cn(
                         "w-full flex items-center justify-between py-2.5 text-xs uppercase font-bold tracking-wider transition-colors active:scale-[0.98]",
-                        isExpanded ? "text-[#F6B83E]" : "text-[#222222]"
+                        isExpanded ? "text-[#C5A059]" : "text-[#111827]"
                       )}
                     >
                       <span>{item.label}</span>
                       <ChevronDown
                         className={cn(
                           "w-4 h-4 transition-transform duration-200 text-neutral-400",
-                          isExpanded ? "rotate-180 text-[#F6B83E]" : ""
+                          isExpanded ? "rotate-180 text-[#C5A059]" : ""
                         )}
                       />
                     </button>
@@ -96,7 +96,7 @@ export function MobileNavigation() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         transition={{ duration: 0.2 }}
-                        className="pl-3 pb-2 space-y-1 border-l-2 border-[#F6B83E]/40 ml-2"
+                        className="pl-3 pb-2 space-y-1 border-l-2 border-[#C5A059]/40 ml-2"
                       >
                         {item.children?.map((sub) => {
                           const isSubActive = pathname === sub.href
@@ -108,8 +108,8 @@ export function MobileNavigation() {
                               className={cn(
                                 "block py-1.5 text-xs transition-colors active:scale-[0.98]",
                                 isSubActive
-                                  ? "text-[#F6B83E] font-semibold"
-                                  : "text-[#555555] hover:text-[#222222]"
+                                  ? "text-[#C5A059] font-semibold"
+                                  : "text-[#4B5563] hover:text-[#111827]"
                               )}
                             >
                               {sub.label}
@@ -137,8 +137,8 @@ export function MobileNavigation() {
                     className={cn(
                       "block py-2.5 text-xs uppercase font-bold tracking-wider transition-colors",
                       isActive
-                        ? "text-[#F6B83E]"
-                        : "text-[#222222] hover:text-[#F6B83E]"
+                        ? "text-[#C5A059]"
+                        : "text-[#111827] hover:text-[#C5A059]"
                     )}
                   >
                     {item.label}
@@ -164,17 +164,17 @@ export function MobileNavigation() {
               </Link>
             </motion.div>
 
-            <div className="space-y-1.5 pt-2 text-[11px] text-[#777777]">
+            <div className="space-y-1.5 pt-2 text-[11px] text-[#555D68]">
               <div className="flex items-center gap-2">
-                <Phone className="w-3 h-3 text-[#F6B83E]" />
+                <Phone className="w-3 h-3 text-[#C5A059]" />
                 <span>(800) JUBOH-ORG</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-3 h-3 text-[#F6B83E]" />
+                <Mail className="w-3 h-3 text-[#C5A059]" />
                 <span>info@jubohfoundation.org</span>
               </div>
               <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[#F6B83E]" />
+                <MapPin className="w-3 h-3 text-[#C5A059]" />
                 <span>United States • 501(c)(3) Nonprofit</span>
               </div>
             </div>

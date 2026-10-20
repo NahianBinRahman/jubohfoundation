@@ -65,10 +65,10 @@ export function ContactForm() {
   return (
     <div className="bg-white rounded-2xl border border-[#E8E5DD] shadow-lg p-7 sm:p-10 space-y-6">
       <div className="space-y-1.5 border-b border-[#F8F6F1] pb-4">
-        <h3 className="font-serif text-2xl font-bold text-[#222222]">
+        <h3 className="font-serif text-2xl font-bold text-[#111827]">
           Send a Message
         </h3>
-        <p className="text-xs sm:text-sm text-[#777777]">
+        <p className="text-xs sm:text-sm text-[#555D68]">
           Fill out the form below to connect with the JUBOH Foundation team.
         </p>
       </div>
@@ -111,7 +111,7 @@ export function ContactForm() {
         <div className="space-y-1.5">
           <label
             htmlFor="fullName"
-            className="text-xs font-bold uppercase tracking-wider text-[#222222] block"
+            className="text-xs font-bold uppercase tracking-wider text-[#111827] block"
           >
             Full Name <span className="text-rose-500">*</span>
           </label>
@@ -133,7 +133,7 @@ export function ContactForm() {
         <div className="space-y-1.5">
           <label
             htmlFor="email"
-            className="text-xs font-bold uppercase tracking-wider text-[#222222] block"
+            className="text-xs font-bold uppercase tracking-wider text-[#111827] block"
           >
             Email Address <span className="text-rose-500">*</span>
           </label>
@@ -156,7 +156,7 @@ export function ContactForm() {
         <div className="space-y-1.5">
           <label
             htmlFor="subject"
-            className="text-xs font-bold uppercase tracking-wider text-[#222222] block"
+            className="text-xs font-bold uppercase tracking-wider text-[#111827] block"
           >
             Inquiry Subject <span className="text-rose-500">*</span>
           </label>
@@ -165,7 +165,7 @@ export function ContactForm() {
               id="subject"
               disabled={isPending}
               {...register("subject")}
-              className="flex h-11 w-full rounded-md border border-[#E8E5DD] bg-white px-3.5 py-2 text-sm text-[#222222] ring-offset-white focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#F6B83E] focus-visible:border-transparent transition-colors cursor-pointer disabled:opacity-50"
+              className="flex h-11 w-full rounded-md border border-[#E8E5DD] bg-white px-3.5 py-2 text-sm text-[#111827] ring-offset-white focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#C5A059] focus-visible:border-transparent transition-colors cursor-pointer disabled:opacity-50"
             >
               <option value="General Inquiry">General Inquiry</option>
               <option value="Business Academy">Business Academy</option>
@@ -187,7 +187,7 @@ export function ContactForm() {
         <div className="space-y-1.5">
           <label
             htmlFor="message"
-            className="text-xs font-bold uppercase tracking-wider text-[#222222] block"
+            className="text-xs font-bold uppercase tracking-wider text-[#111827] block"
           >
             Message <span className="text-rose-500">*</span>
           </label>
@@ -211,7 +211,7 @@ export function ContactForm() {
           <Button
             type="submit"
             disabled={isPending}
-            className="w-full bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold py-3.5 text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-sm transition-all cursor-pointer disabled:opacity-60"
+            className="w-full bg-[#C5A059] hover:bg-[#B38E46] text-[#111827] font-bold py-3.5 text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-sm transition-all cursor-pointer disabled:opacity-60"
           >
             {isPending ? (
               <>

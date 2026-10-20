@@ -10,7 +10,7 @@ interface ProgramCardProps {
 
 export function ProgramCard({ program }: ProgramCardProps) {
   return (
-    <article className="bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#F6B83E]/50 transition-all duration-300 flex flex-col justify-between group">
+    <article className="bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#C5A059]/50 transition-all duration-300 flex flex-col justify-between group">
       <div>
         {/* Photographic Header Container */}
         <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100">
@@ -21,20 +21,20 @@ export function ProgramCard({ program }: ProgramCardProps) {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
           />
-          <div className="absolute top-3.5 left-3.5 bg-[#222222]/90 backdrop-blur-xs text-[#F6B83E] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-xs shadow-xs">
+          <div className="absolute top-3.5 left-3.5 bg-[#111827]/90 backdrop-blur-xs text-[#C5A059] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-xs shadow-xs">
             {program.category}
           </div>
         </div>
 
         {/* Card Body */}
         <div className="p-6 sm:p-7">
-          <span className="text-[11px] font-semibold text-[#F6B83E] uppercase tracking-wider block mb-1">
+          <span className="text-[11px] font-semibold text-[#C5A059] uppercase tracking-wider block mb-1">
             {program.tagline}
           </span>
-          <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#222222] mb-3 group-hover:text-[#F6B83E] transition-colors leading-snug">
+          <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#111827] mb-3 group-hover:text-[#C5A059] transition-colors leading-snug">
             {program.title}
           </h3>
-          <p className="text-xs sm:text-sm text-[#777777] leading-relaxed line-clamp-3">
+          <p className="text-xs sm:text-sm text-[#555D68] leading-relaxed line-clamp-3">
             {program.overview}
           </p>
         </div>
@@ -44,7 +44,7 @@ export function ProgramCard({ program }: ProgramCardProps) {
       <div className="px-6 sm:px-7 pb-6 pt-2 border-t border-neutral-100 flex items-center justify-between">
         <Link
           href={`/programs/${program.slug}`}
-          className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#222222] group-hover:text-[#F6B83E] transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#111827] group-hover:text-[#C5A059] transition-colors"
         >
           <span>EXPLORE PROGRAM</span>
           <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />

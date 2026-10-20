@@ -47,8 +47,8 @@ export function BrandLogo({
           sizeClasses.wrapper,
           "rounded-full flex items-center justify-center transition-all duration-300 shadow-xs group-hover:scale-105 shrink-0",
           isDark
-            ? "bg-[#222222] border border-[#F6B83E]/30 text-[#F6B83E] group-hover:border-[#F6B83E] group-hover:shadow-[0_0_15px_rgba(246,184,62,0.25)]"
-            : "bg-[#F6B83E]/15 border border-[#F6B83E]/40 text-[#F6B83E] group-hover:bg-[#F6B83E]/25 group-hover:border-[#F6B83E]"
+            ? "bg-[#111827] border border-[#C5A059]/30 text-[#C5A059] group-hover:border-[#C5A059] group-hover:shadow-[0_0_15px_rgba(246,184,62,0.25)]"
+            : "bg-[#C5A059]/15 border border-[#C5A059]/40 text-[#C5A059] group-hover:bg-[#C5A059]/25 group-hover:border-[#C5A059]"
         )}
       >
         <LogoIcon className={sizeClasses.icon} variant="gold" />
@@ -61,8 +61,8 @@ export function BrandLogo({
             "font-serif font-bold tracking-tight leading-none transition-colors",
             sizeClasses.title,
             isDark
-              ? "text-white group-hover:text-[#F6B83E]"
-              : "text-[#222222] group-hover:text-[#F6B83E]"
+              ? "text-white group-hover:text-[#C5A059]"
+              : "text-[#111827] group-hover:text-[#C5A059]"
           )}
         >
           JUBOH FOUNDATION
@@ -71,7 +71,7 @@ export function BrandLogo({
           className={cn(
             "tracking-[0.2em] uppercase font-medium mt-1 leading-none transition-colors",
             sizeClasses.tagline,
-            isDark ? "text-[#F6B83E]" : "text-[#777777] group-hover:text-[#F6B83E]"
+            isDark ? "text-[#C5A059]" : "text-[#555D68] group-hover:text-[#C5A059]"
           )}
         >
           Excellence In Everything

@@ -58,7 +58,7 @@ export function DonationPrograms() {
           {PROGRAMS_LIST.map((program) => (
             <article
               key={program.title}
-              className="bg-white rounded-xl border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#F6B83E]/50 transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white rounded-xl border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#C5A059]/50 transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
                 {/* Image Cover */}
@@ -70,17 +70,17 @@ export function DonationPrograms() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#222222]/90 backdrop-blur-xs text-[#F6B83E] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-xs">
+                  <div className="absolute top-3 left-3 bg-[#111827]/90 backdrop-blur-xs text-[#C5A059] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-xs">
                     {program.category}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6 space-y-2.5">
-                  <h3 className="font-serif text-lg font-bold text-[#222222] group-hover:text-[#F6B83E] transition-colors leading-snug">
+                  <h3 className="font-serif text-lg font-bold text-[#111827] group-hover:text-[#C5A059] transition-colors leading-snug">
                     <Link href={program.href}>{program.title}</Link>
                   </h3>
-                  <p className="text-xs text-[#777777] leading-relaxed line-clamp-3">
+                  <p className="text-xs text-[#555D68] leading-relaxed line-clamp-3">
                     {program.description}
                   </p>
                 </div>
@@ -90,7 +90,7 @@ export function DonationPrograms() {
               <div className="px-6 pb-6 pt-2 border-t border-[#F8F6F1]">
                 <Link
                   href={program.href}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#222222] group-hover:text-[#F6B83E] transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#111827] group-hover:text-[#C5A059] transition-colors"
                 >
                   <span>Learn More</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

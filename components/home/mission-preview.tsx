@@ -70,23 +70,23 @@ export function MissionPreview() {
                 <motion.div
                   whileHover={{ y: -6 }}
                   transition={{ duration: 0.25, ease: "easeOut" }}
-                  className="h-full bg-white p-7 rounded-lg border border-[#E8E5DD] hover:border-[#F6B83E] shadow-2xs hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between text-center group"
+                  className="h-full bg-white p-7 rounded-lg border border-[#E8E5DD] hover:border-[#C5A059] shadow-2xs hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between text-center group"
                 >
                   <div>
                     {/* Gold-Accented Icon Container */}
-                    <div className="w-14 h-14 rounded-full bg-[#F8F6F1] border border-[#E8E5DD] flex items-center justify-center text-[#F6B83E] mx-auto mb-5 group-hover:bg-[#F6B83E] group-hover:text-[#222222] transition-colors duration-200">
+                    <div className="w-14 h-14 rounded-full bg-[#F8F6F1] border border-[#E8E5DD] flex items-center justify-center text-[#C5A059] mx-auto mb-5 group-hover:bg-[#C5A059] group-hover:text-[#111827] transition-colors duration-200">
                       <Icon className="w-6 h-6 transition-transform duration-300 group-hover:scale-110" />
                     </div>
 
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#F6B83E] block mb-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#C5A059] block mb-1">
                       {pillar.subtitle}
                     </span>
 
-                    <h3 className="font-serif text-lg font-bold text-[#222222] mb-3 group-hover:text-[#F6B83E] transition-colors">
+                    <h3 className="font-serif text-lg font-bold text-[#111827] mb-3 group-hover:text-[#C5A059] transition-colors">
                       {pillar.title}
                     </h3>
 
-                    <p className="text-xs text-[#777777] leading-relaxed">
+                    <p className="text-xs text-[#555D68] leading-relaxed">
                       {pillar.description}
                     </p>
                   </div>

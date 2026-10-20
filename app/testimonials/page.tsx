@@ -24,17 +24,17 @@ export default function TestimonialsPage() {
         <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 text-center">
           <div className="container-custom">
             <ScrollReveal direction="up" distance={24}>
-              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal text-[#222222] tracking-tight mb-4">
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal text-[#111827] tracking-tight mb-4">
                 Testimonials
               </h1>
 
               {/* Breadcrumb matching reference image 1 */}
-              <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-[#777777]">
-                <Link href="/" className="hover:text-[#F6B83E] transition-colors">
+              <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-[#555D68]">
+                <Link href="/" className="hover:text-[#C5A059] transition-colors">
                   Home
                 </Link>
-                <span className="text-[#F6B83E]">&rarr;</span>
-                <span className="text-[#222222] font-semibold">Testimonials</span>
+                <span className="text-[#C5A059]">&rarr;</span>
+                <span className="text-[#111827] font-semibold">Testimonials</span>
               </div>
             </ScrollReveal>
           </div>
@@ -53,13 +53,13 @@ export default function TestimonialsPage() {
         <section className="py-20 sm:py-28 bg-[#F4EFE8] border-t border-[#EAE3D8]">
           <div className="container-custom">
             <ScrollReveal direction="up" distance={24} className="text-center max-w-2xl mx-auto mb-16">
-              <span className="eyebrow-script text-2xl text-[#F6B83E] block mb-2">
+              <span className="eyebrow-script text-2xl text-[#C5A059] block mb-2">
                 Voices of Hope
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#222222] tracking-tight leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#111827] tracking-tight leading-tight">
                 Stories of Resilience & Ubuntu
               </h2>
-              <p className="text-sm md:text-base text-[#777777] mt-3 leading-relaxed">
+              <p className="text-sm md:text-base text-[#555D68] mt-3 leading-relaxed">
                 Hear directly from the students, entrepreneurs, families, and
                 volunteers who partner with JUBOH Foundation across our key initiatives.
               </p>

@@ -44,7 +44,7 @@ export function GalleryGrid() {
       {/* Empty State fallback if a category has no items */}
       {filteredItems.length === 0 && (
         <div className="text-center py-16 bg-[#F8F6F1] rounded-lg border border-[#E8E5DD] max-w-md mx-auto">
-          <p className="text-xs sm:text-sm text-[#777777]">
+          <p className="text-xs sm:text-sm text-[#555D68]">
             No photographs available in this category currently.
           </p>
         </div>

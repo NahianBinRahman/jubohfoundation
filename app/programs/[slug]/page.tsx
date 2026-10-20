@@ -71,9 +71,9 @@ export default async function ProgramDetailPage({ params }: ProgramPageProps) {
         <ProgramInitiatives program={program} />
 
         {/* 4. Action Banner */}
-        <section className="py-20 bg-[#222222] text-white text-center">
+        <section className="py-20 bg-[#111827] text-white text-center">
           <div className="container-custom max-w-3xl mx-auto space-y-6">
-            <span className="eyebrow-script text-2xl text-[#F6B83E] block">
+            <span className="eyebrow-script text-2xl text-[#C5A059] block">
               Join This Mission
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">

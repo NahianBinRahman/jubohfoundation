@@ -11,7 +11,7 @@ interface EventCardProps {
 
 export function EventCard({ event, featured = false }: EventCardProps) {
   return (
-    <article className="bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#F6B83E]/50 transition-all duration-300 flex flex-col justify-between group">
+    <article className="bg-white rounded-lg border border-[#E8E5DD] overflow-hidden shadow-xs hover:shadow-lg hover:border-[#C5A059]/50 transition-all duration-300 flex flex-col justify-between group">
       <div>
         {/* Event Header Image */}
         <div className="relative aspect-[16/10] overflow-hidden bg-neutral-100">
@@ -24,7 +24,7 @@ export function EventCard({ event, featured = false }: EventCardProps) {
           />
 
           {/* Gold Date Block (Humanite Events Style) */}
-          <div className="absolute top-3.5 left-3.5 bg-[#F6B83E] text-[#222222] rounded-xs shadow-md p-2 flex flex-col items-center justify-center min-w-[54px] text-center">
+          <div className="absolute top-3.5 left-3.5 bg-[#C5A059] text-[#111827] rounded-xs shadow-md p-2 flex flex-col items-center justify-center min-w-[54px] text-center">
             <span className="font-serif text-lg font-bold leading-none">
               {event.displayDay}
             </span>
@@ -34,7 +34,7 @@ export function EventCard({ event, featured = false }: EventCardProps) {
           </div>
 
           {/* Category Tag */}
-          <div className="absolute top-3.5 right-3.5 bg-[#222222]/85 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-xs">
+          <div className="absolute top-3.5 right-3.5 bg-[#111827]/85 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-xs">
             {event.category}
           </div>
         </div>
@@ -42,24 +42,24 @@ export function EventCard({ event, featured = false }: EventCardProps) {
         {/* Content Body */}
         <div className="p-6">
           {/* Metadata Chips: Time and Location */}
-          <div className="flex flex-wrap items-center gap-4 text-[11px] text-[#777777] mb-3">
+          <div className="flex flex-wrap items-center gap-4 text-[11px] text-[#555D68] mb-3">
             <div className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-[#F6B83E]" />
+              <Clock className="w-3.5 h-3.5 text-[#C5A059]" />
               <span>
                 {event.startTime} - {event.endTime}
               </span>
             </div>
             <div className="flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-[#F6B83E]" />
+              <MapPin className="w-3.5 h-3.5 text-[#C5A059]" />
               <span className="truncate max-w-[160px]">{event.location}</span>
             </div>
           </div>
 
-          <h3 className="font-serif text-xl font-bold text-[#222222] mb-2.5 group-hover:text-[#F6B83E] transition-colors leading-snug">
+          <h3 className="font-serif text-xl font-bold text-[#111827] mb-2.5 group-hover:text-[#C5A059] transition-colors leading-snug">
             {event.title}
           </h3>
 
-          <p className="text-xs text-[#777777] leading-relaxed line-clamp-3">
+          <p className="text-xs text-[#555D68] leading-relaxed line-clamp-3">
             {event.description}
           </p>
         </div>
@@ -69,7 +69,7 @@ export function EventCard({ event, featured = false }: EventCardProps) {
       <div className="px-6 pb-6 pt-2 border-t border-neutral-100 flex items-center justify-between">
         <Link
           href={`/events/${event.slug}`}
-          className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#222222] group-hover:text-[#F6B83E] transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#111827] group-hover:text-[#C5A059] transition-colors"
         >
           <span>VIEW DETAILS</span>
           <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />

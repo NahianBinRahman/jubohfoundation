@@ -27,18 +27,18 @@ export function EventsList({ events }: EventsListProps) {
   // Polished Empty State
   return (
     <div className="max-w-3xl mx-auto bg-white rounded-xl border border-[#E8E5DD] shadow-xs p-10 sm:p-14 text-center space-y-6">
-      <div className="w-16 h-16 rounded-full bg-[#F8F6F1] border border-[#E8E5DD] flex items-center justify-center text-[#F6B83E] mx-auto shadow-2xs">
+      <div className="w-16 h-16 rounded-full bg-[#F8F6F1] border border-[#E8E5DD] flex items-center justify-center text-[#C5A059] mx-auto shadow-2xs">
         <Calendar className="w-7 h-7" />
       </div>
 
       <div className="space-y-3">
-        <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#F6B83E] block">
+        <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A059] block">
           Schedule Coordination
         </span>
-        <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#222222]">
+        <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#111827]">
           New Events Coming Soon
         </h3>
-        <p className="text-xs sm:text-sm text-[#777777] max-w-lg mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#555D68] max-w-lg mx-auto leading-relaxed">
           Stay connected with Juboh Foundation for upcoming events, workshops,
           college tours, and community opportunities. Our team is finalizing our
           upcoming schedule.

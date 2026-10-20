@@ -32,46 +32,46 @@ export default function TermsPage() {
             {/* Highlights Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-[#F8F6F1] p-6 rounded-xl border border-[#E8E5DD] space-y-3">
-                <div className="w-10 h-10 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center">
                   <Award className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-[#222222]">
+                <h3 className="font-serif text-lg font-bold text-[#111827]">
                   501(c)(3) Charter
                 </h3>
-                <p className="text-xs text-[#777777] leading-relaxed">
+                <p className="text-xs text-[#555D68] leading-relaxed">
                   Operated in strict compliance with federal regulations governing tax-exempt public charities.
                 </p>
               </div>
 
               <div className="bg-[#F8F6F1] p-6 rounded-xl border border-[#E8E5DD] space-y-3">
-                <div className="w-10 h-10 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center">
                   <FileText className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-[#222222]">
+                <h3 className="font-serif text-lg font-bold text-[#111827]">
                   Educational Use
                 </h3>
-                <p className="text-xs text-[#777777] leading-relaxed">
+                <p className="text-xs text-[#555D68] leading-relaxed">
                   Materials are provided for charitable, educational, and community empowerment purposes.
                 </p>
               </div>
 
               <div className="bg-[#F8F6F1] p-6 rounded-xl border border-[#E8E5DD] space-y-3">
-                <div className="w-10 h-10 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center">
                   <Heart className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-[#222222]">
+                <h3 className="font-serif text-lg font-bold text-[#111827]">
                   Community Values
                 </h3>
-                <p className="text-xs text-[#777777] leading-relaxed">
+                <p className="text-xs text-[#555D68] leading-relaxed">
                   Rooted in the Ubuntu philosophy of mutual respect, dignity, and collective uplift.
                 </p>
               </div>
             </div>
 
             {/* Terms Body */}
-            <div className="space-y-8 text-xs sm:text-sm text-[#555555] leading-relaxed border-t border-[#E8E5DD] pt-8">
+            <div className="space-y-8 text-xs sm:text-sm text-[#4B5563] leading-relaxed border-t border-[#E8E5DD] pt-8">
               <div className="space-y-3">
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#222222]">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#111827]">
                   1. Acceptance of Terms
                 </h2>
                 <p>
@@ -80,7 +80,7 @@ export default function TermsPage() {
               </div>
 
               <div className="space-y-3">
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#222222]">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#111827]">
                   2. Intellectual Property & Brand Usage
                 </h2>
                 <p>
@@ -89,7 +89,7 @@ export default function TermsPage() {
               </div>
 
               <div className="space-y-3">
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#222222]">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#111827]">
                   3. Charitable Contributions
                 </h2>
                 <p>
@@ -98,14 +98,14 @@ export default function TermsPage() {
               </div>
 
               <div className="space-y-3">
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#222222]">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#111827]">
                   4. Governance & Inquiries
                 </h2>
                 <p>
                   For governance inquiries, official documents, or collaborative partnership proposals, please reach out to our team at{" "}
                   <a
                     href="mailto:info@jubohfoundation.org"
-                    className="text-[#F6B83E] font-medium hover:underline"
+                    className="text-[#C5A059] font-medium hover:underline"
                   >
                     info@jubohfoundation.org
                   </a>.

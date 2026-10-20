@@ -30,9 +30,9 @@ export function StorySidebar({ recentStories = [] }: StorySidebarProps) {
     <aside className="space-y-8">
       {/* 1. Latest Stories */}
       <div className="bg-white rounded-xl border border-[#E8E5DD] p-6 sm:p-7 shadow-xs">
-        <h4 className="font-serif text-lg font-bold text-[#222222] mb-4 pb-3 border-b border-[#F8F6F1] flex items-center justify-between">
+        <h4 className="font-serif text-lg font-bold text-[#111827] mb-4 pb-3 border-b border-[#F8F6F1] flex items-center justify-between">
           <span>Latest Stories</span>
-          <BookOpen className="w-4 h-4 text-[#F6B83E]" />
+          <BookOpen className="w-4 h-4 text-[#C5A059]" />
         </h4>
 
         {recentStories.length > 0 ? (
@@ -53,10 +53,10 @@ export function StorySidebar({ recentStories = [] }: StorySidebarProps) {
                   />
                 </div>
                 <div className="space-y-1">
-                  <h5 className="font-serif text-sm font-bold text-[#222222] group-hover:text-[#F6B83E] transition-colors line-clamp-2 leading-snug">
+                  <h5 className="font-serif text-sm font-bold text-[#111827] group-hover:text-[#C5A059] transition-colors line-clamp-2 leading-snug">
                     {story.title}
                   </h5>
-                  <span className="text-[11px] text-[#777777] block">
+                  <span className="text-[11px] text-[#555D68] block">
                     {story.formattedDate}
                   </span>
                 </div>
@@ -64,7 +64,7 @@ export function StorySidebar({ recentStories = [] }: StorySidebarProps) {
             ))}
           </div>
         ) : (
-          <p className="text-xs text-[#777777] leading-relaxed">
+          <p className="text-xs text-[#555D68] leading-relaxed">
             New community updates and articles are currently in preparation. Check back soon for inspiring stories.
           </p>
         )}
@@ -72,7 +72,7 @@ export function StorySidebar({ recentStories = [] }: StorySidebarProps) {
 
       {/* 2. Categories */}
       <div className="bg-white rounded-xl border border-[#E8E5DD] p-6 sm:p-7 shadow-xs">
-        <h4 className="font-serif text-lg font-bold text-[#222222] mb-4 pb-3 border-b border-[#F8F6F1]">
+        <h4 className="font-serif text-lg font-bold text-[#111827] mb-4 pb-3 border-b border-[#F8F6F1]">
           Categories
         </h4>
         <ul className="space-y-2.5">
@@ -80,12 +80,12 @@ export function StorySidebar({ recentStories = [] }: StorySidebarProps) {
             <li key={cat.name}>
               <Link
                 href="/programs"
-                className="flex items-center justify-between text-xs sm:text-sm text-[#777777] hover:text-[#222222] hover:font-medium transition-colors py-1 group"
+                className="flex items-center justify-between text-xs sm:text-sm text-[#555D68] hover:text-[#111827] hover:font-medium transition-colors py-1 group"
               >
                 <span className="group-hover:translate-x-0.5 transition-transform">
                   {cat.name}
                 </span>
-                <span className="text-[10px] text-[#777777]/70 bg-[#F8F6F1] px-2 py-0.5 rounded-full border border-[#E8E5DD]">
+                <span className="text-[10px] text-[#555D68]/70 bg-[#F8F6F1] px-2 py-0.5 rounded-full border border-[#E8E5DD]">
                   Programs
                 </span>
               </Link>
@@ -96,7 +96,7 @@ export function StorySidebar({ recentStories = [] }: StorySidebarProps) {
 
       {/* 3. Our Programs */}
       <div className="bg-white rounded-xl border border-[#E8E5DD] p-6 sm:p-7 shadow-xs">
-        <h4 className="font-serif text-lg font-bold text-[#222222] mb-4 pb-3 border-b border-[#F8F6F1]">
+        <h4 className="font-serif text-lg font-bold text-[#111827] mb-4 pb-3 border-b border-[#F8F6F1]">
           Our Programs
         </h4>
         <ul className="space-y-2.5">
@@ -104,10 +104,10 @@ export function StorySidebar({ recentStories = [] }: StorySidebarProps) {
             <li key={item.name}>
               <Link
                 href={item.href}
-                className="flex items-center justify-between text-xs sm:text-sm text-[#777777] hover:text-[#F6B83E] transition-colors py-1 group"
+                className="flex items-center justify-between text-xs sm:text-sm text-[#555D68] hover:text-[#C5A059] transition-colors py-1 group"
               >
                 <span className="line-clamp-1">{item.name}</span>
-                <ChevronRight className="w-3.5 h-3.5 text-[#777777]/50 group-hover:text-[#F6B83E] group-hover:translate-x-1 transition-all shrink-0 ml-2" />
+                <ChevronRight className="w-3.5 h-3.5 text-[#555D68]/50 group-hover:text-[#C5A059] group-hover:translate-x-1 transition-all shrink-0 ml-2" />
               </Link>
             </li>
           ))}
@@ -115,13 +115,13 @@ export function StorySidebar({ recentStories = [] }: StorySidebarProps) {
       </div>
 
       {/* 4. Get Involved CTA Card (Humanite Sidebar Pattern) */}
-      <div className="bg-[#222222] rounded-xl p-7 text-white shadow-md relative overflow-hidden space-y-4">
-        <div className="absolute top-0 right-0 w-24 h-24 bg-[#F6B83E]/10 rounded-full blur-2xl" />
-        <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-[#F6B83E]">
+      <div className="bg-[#111827] rounded-xl p-7 text-white shadow-md relative overflow-hidden space-y-4">
+        <div className="absolute top-0 right-0 w-24 h-24 bg-[#C5A059]/10 rounded-full blur-2xl" />
+        <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-[#C5A059]">
           <Sparkles className="w-5 h-5" />
         </div>
         <div className="space-y-1.5">
-          <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#F6B83E] block">
+          <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C5A059] block">
             Make An Impact
           </span>
           <h4 className="font-serif text-xl font-bold text-white leading-snug">

@@ -77,21 +77,21 @@ export function EventRegistrationForm({
   return (
     <div className="bg-[#F8F6F1] rounded-xl border border-[#E8E5DD] p-7 sm:p-8 space-y-6">
       <div className="space-y-1.5">
-        <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#F6B83E] block">
+        <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A059] block">
           Event Participation
         </span>
-        <h3 className="font-serif text-2xl font-bold text-[#222222]">
+        <h3 className="font-serif text-2xl font-bold text-[#111827]">
           Register for this Event
         </h3>
-        <p className="text-xs text-[#777777] leading-relaxed">
+        <p className="text-xs text-[#555D68] leading-relaxed">
           Reserve your attendance for upcoming JUBOH Foundation workshops and masterminds.
         </p>
       </div>
 
       {/* Backend Status Disclosure: Registration Currently Unavailable */}
       {!registrationEnabled && (
-        <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-500/10 border border-[#F6B83E]/40 text-[#222222] text-xs">
-          <AlertCircle className="w-4 h-4 text-[#F6B83E] shrink-0 mt-0.5" />
+        <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-500/10 border border-[#C5A059]/40 text-[#111827] text-xs">
+          <AlertCircle className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
           <div className="space-y-1">
             <span className="font-bold block">Online Registration Opening Soon</span>
             <span className="text-[#666666] leading-relaxed block">
@@ -143,20 +143,20 @@ export function EventRegistrationForm({
 
         {/* Preselected / Read-Only Event Field */}
         <div className="space-y-1.5">
-          <label className="text-xs font-bold text-[#222222] block">
+          <label className="text-xs font-bold text-[#111827] block">
             Selected Event
           </label>
           <input
             type="text"
             value={eventTitle}
             readOnly
-            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#555555] cursor-not-allowed select-none"
+            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#4B5563] cursor-not-allowed select-none"
           />
         </div>
 
         {/* Full Name Field */}
         <div className="space-y-1.5">
-          <label className="text-xs font-bold text-[#222222] block">
+          <label className="text-xs font-bold text-[#111827] block">
             Full Name <span className="text-red-500">*</span>
           </label>
           <input
@@ -164,7 +164,7 @@ export function EventRegistrationForm({
             disabled={!registrationEnabled || isPending}
             placeholder="Your First & Last Name"
             {...register("fullName")}
-            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#222222] placeholder-neutral-400 focus:outline-hidden focus:border-[#F6B83E] disabled:bg-neutral-100 disabled:cursor-not-allowed"
+            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#111827] placeholder-neutral-400 focus:outline-hidden focus:border-[#C5A059] disabled:bg-neutral-100 disabled:cursor-not-allowed"
           />
           {errors.fullName && (
             <p className="text-[11px] text-red-600">{errors.fullName.message}</p>
@@ -173,7 +173,7 @@ export function EventRegistrationForm({
 
         {/* Email Address Field */}
         <div className="space-y-1.5">
-          <label className="text-xs font-bold text-[#222222] block">
+          <label className="text-xs font-bold text-[#111827] block">
             Email Address <span className="text-red-500">*</span>
           </label>
           <input
@@ -181,7 +181,7 @@ export function EventRegistrationForm({
             disabled={!registrationEnabled || isPending}
             placeholder="your.email@example.com"
             {...register("email")}
-            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#222222] placeholder-neutral-400 focus:outline-hidden focus:border-[#F6B83E] disabled:bg-neutral-100 disabled:cursor-not-allowed"
+            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#111827] placeholder-neutral-400 focus:outline-hidden focus:border-[#C5A059] disabled:bg-neutral-100 disabled:cursor-not-allowed"
           />
           {errors.email && (
             <p className="text-[11px] text-red-600">{errors.email.message}</p>
@@ -190,7 +190,7 @@ export function EventRegistrationForm({
 
         {/* Phone Number Field (Optional) */}
         <div className="space-y-1.5">
-          <label className="text-xs font-bold text-[#222222] block">
+          <label className="text-xs font-bold text-[#111827] block">
             Phone Number <span className="text-neutral-400 font-normal">(Optional)</span>
           </label>
           <input
@@ -198,13 +198,13 @@ export function EventRegistrationForm({
             disabled={!registrationEnabled || isPending}
             placeholder="(555) 000-0000"
             {...register("phone")}
-            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#222222] placeholder-neutral-400 focus:outline-hidden focus:border-[#F6B83E] disabled:bg-neutral-100 disabled:cursor-not-allowed"
+            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#111827] placeholder-neutral-400 focus:outline-hidden focus:border-[#C5A059] disabled:bg-neutral-100 disabled:cursor-not-allowed"
           />
         </div>
 
         {/* Message / Questions Field (Optional) */}
         <div className="space-y-1.5">
-          <label className="text-xs font-bold text-[#222222] block">
+          <label className="text-xs font-bold text-[#111827] block">
             Special Requests or Questions <span className="text-neutral-400 font-normal">(Optional)</span>
           </label>
           <textarea
@@ -212,7 +212,7 @@ export function EventRegistrationForm({
             disabled={!registrationEnabled || isPending}
             placeholder="Any accommodations or topic questions for the facilitators..."
             {...register("message")}
-            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#222222] placeholder-neutral-400 focus:outline-hidden focus:border-[#F6B83E] disabled:bg-neutral-100 disabled:cursor-not-allowed"
+            className="w-full bg-white border border-[#E8E5DD] rounded-md px-3.5 py-2.5 text-xs text-[#111827] placeholder-neutral-400 focus:outline-hidden focus:border-[#C5A059] disabled:bg-neutral-100 disabled:cursor-not-allowed"
           />
         </div>
 

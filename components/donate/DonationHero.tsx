@@ -16,7 +16,7 @@ export function DonationHero() {
   }
 
   return (
-    <div className="relative min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex items-center justify-center bg-[#222222] overflow-hidden">
+    <div className="relative min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex items-center justify-center bg-[#111827] overflow-hidden">
       {/* Background Image with Dark Vignette Overlay */}
       <Image
         src={IMAGES.donation.hero.src}
@@ -26,8 +26,8 @@ export function DonationHero() {
         sizes="100vw"
         className="object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#222222]/95 via-[#222222]/80 to-[#222222]/60" />
-      <div className="absolute inset-0 bg-radial from-transparent via-[#222222]/40 to-[#222222]/90" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#111827]/95 via-[#111827]/80 to-[#111827]/60" />
+      <div className="absolute inset-0 bg-radial from-transparent via-[#111827]/40 to-[#111827]/90" />
 
       {/* Hero Content */}
       <div className="container-custom relative z-10 py-24 sm:py-28 md:py-32">
@@ -37,14 +37,14 @@ export function DonationHero() {
             <Link href="/" className="hover:text-white transition-colors">
               Home
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-[#F6B83E]" />
+            <ChevronRight className="w-3.5 h-3.5 text-[#C5A059]" />
             <span className="text-neutral-200">Donate</span>
           </nav>
 
           {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 bg-[#F6B83E]/20 border border-[#F6B83E]/40 px-3.5 py-1 rounded-full backdrop-blur-xs">
-            <Heart className="w-3.5 h-3.5 text-[#F6B83E] fill-current" />
-            <span className="text-[11px] font-bold uppercase tracking-widest text-[#F6B83E]">
+          <div className="inline-flex items-center gap-2 bg-[#C5A059]/20 border border-[#C5A059]/40 px-3.5 py-1 rounded-full backdrop-blur-xs">
+            <Heart className="w-3.5 h-3.5 text-[#C5A059] fill-current" />
+            <span className="text-[11px] font-bold uppercase tracking-widest text-[#C5A059]">
               Make a Difference
             </span>
           </div>
@@ -63,7 +63,7 @@ export function DonationHero() {
           <div className="pt-4 flex flex-wrap items-center gap-4">
             <button
               onClick={scrollToDonation}
-              className="inline-flex items-center gap-2 bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-sm tracking-wide px-6 py-3.5 rounded-sm shadow-md transition-all duration-200 cursor-pointer"
+              className="inline-flex items-center gap-2 bg-[#C5A059] hover:bg-[#B38E46] text-[#111827] font-bold text-sm tracking-wide px-6 py-3.5 rounded-sm shadow-md transition-all duration-200 cursor-pointer"
             >
               <span>Support Our Mission</span>
               <ArrowDown className="w-4 h-4" />

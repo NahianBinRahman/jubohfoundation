@@ -34,7 +34,7 @@ export function SectionHeader({
       <h2
         className={cn(
           "font-serif text-3xl md:text-4xl lg:text-[42px] leading-tight font-bold tracking-tight mb-4",
-          inverted ? "text-white" : "text-[#222222]"
+          inverted ? "text-white" : "text-[#111827]"
         )}
       >
         {title}
@@ -43,7 +43,7 @@ export function SectionHeader({
         <p
           className={cn(
             "text-sm md:text-base leading-relaxed",
-            inverted ? "text-neutral-300" : "text-[#777777]"
+            inverted ? "text-neutral-300" : "text-[#555D68]"
           )}
         >
           {description}

@@ -54,16 +54,16 @@ export default function ProgramsPage() {
         {/* Section 4: Mission Commitment Banner */}
         <section className="py-20 bg-[#F8F6F1] border-t border-[#E8E5DD] text-center">
           <div className="container-custom max-w-3xl mx-auto space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F6B83E]/20 text-[#222222] text-xs font-bold uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5 text-[#F6B83E] fill-current" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C5A059]/20 text-[#111827] text-xs font-bold uppercase tracking-wider">
+              <Sparkles className="w-3.5 h-3.5 text-[#C5A059] fill-current" />
               <span>Ubuntu In Action</span>
             </div>
 
-            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#222222]">
+            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#111827]">
               Need Additional Information or Guidance?
             </h3>
 
-            <p className="text-xs sm:text-sm text-[#777777] leading-relaxed max-w-xl mx-auto">
+            <p className="text-xs sm:text-sm text-[#555D68] leading-relaxed max-w-xl mx-auto">
               Our foundation directors and initiative leads are available to assist
               with program enrollments, housing counseling, or corporate
               collaborative partnerships.

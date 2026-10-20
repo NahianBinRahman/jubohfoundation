@@ -46,7 +46,7 @@ export default function EventsPage() {
               <h2 className="text-4xl sm:text-5xl md:text-[54px] font-bold text-[#1A1A1A] tracking-tight leading-tight">
                 Upcoming Events
               </h2>
-              <p className="text-sm sm:text-base text-[#777777] max-w-2xl mt-3 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#555D68] max-w-2xl mt-3 leading-relaxed">
                 Join the JUBOH Foundation across executive business masterminds, college leadership tours, and community housing summits designed to educate, inspire, and empower.
               </p>
             </div>

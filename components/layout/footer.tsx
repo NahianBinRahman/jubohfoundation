@@ -9,55 +9,55 @@ import { LogoIcon } from "@/components/common/logo-icon"
 
 export function Footer() {
   return (
-    <footer className="bg-[#222222] text-[#cccccc] pt-16 pb-8 border-t border-neutral-800">
+    <footer className="bg-[#111827] text-[#cccccc] pt-16 pb-8 border-t border-neutral-800">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-neutral-800">
           {/* Column 1: Quick Links */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#F6B83E]" />
+              <span className="w-2 h-2 rounded-full bg-[#C5A059]" />
               <h4 className="font-serif text-white font-bold text-base tracking-wide">
                 Quick Links
               </h4>
             </div>
             <ul className="space-y-2.5 text-xs text-[#999999]">
               <li>
-                <Link href="/" className="hover:text-[#F6B83E] transition-colors">
+                <Link href="/" className="hover:text-[#C5A059] transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-[#F6B83E] transition-colors">
+                <Link href="/about" className="hover:text-[#C5A059] transition-colors">
                   About Us & Ubuntu Spirit
                 </Link>
               </li>
               <li>
-                <Link href="/events" className="hover:text-[#F6B83E] transition-colors">
+                <Link href="/events" className="hover:text-[#C5A059] transition-colors">
                   Events & Masterminds
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="hover:text-[#F6B83E] transition-colors">
+                <Link href="/gallery" className="hover:text-[#C5A059] transition-colors">
                   Photo Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/stories" className="hover:text-[#F6B83E] transition-colors">
+                <Link href="/stories" className="hover:text-[#C5A059] transition-colors">
                   Impact Stories
                 </Link>
               </li>
               <li>
-                <Link href="/testimonials" className="hover:text-[#F6B83E] transition-colors">
+                <Link href="/testimonials" className="hover:text-[#C5A059] transition-colors">
                   Community Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:text-[#F6B83E] transition-colors">
+                <Link href="/faq" className="hover:text-[#C5A059] transition-colors">
                   Frequently Asked Questions
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-[#F6B83E] transition-colors">
+                <Link href="/contact" className="hover:text-[#C5A059] transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -67,7 +67,7 @@ export function Footer() {
           {/* Column 2: Our Programs */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#F6B83E]" />
+              <span className="w-2 h-2 rounded-full bg-[#C5A059]" />
               <h4 className="font-serif text-white font-bold text-base tracking-wide">
                 Our Programs
               </h4>
@@ -77,7 +77,7 @@ export function Footer() {
                 <li key={prog.id}>
                   <Link
                     href={`/programs#${prog.id}`}
-                    className="hover:text-[#F6B83E] transition-colors"
+                    className="hover:text-[#C5A059] transition-colors"
                   >
                     {prog.title}
                   </Link>
@@ -86,7 +86,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/programs/founders-initiatives"
-                  className="hover:text-[#F6B83E] transition-colors"
+                  className="hover:text-[#C5A059] transition-colors"
                 >
                   Founder&apos;s Initiatives
                 </Link>
@@ -94,7 +94,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/programs/housing"
-                  className="hover:text-[#F6B83E] transition-colors"
+                  className="hover:text-[#C5A059] transition-colors"
                 >
                   Workforce Housing (CHDO)
                 </Link>
@@ -105,7 +105,7 @@ export function Footer() {
           {/* Column 3: Contact Information */}
           <div className="space-y-3.5">
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#F6B83E]" />
+              <span className="w-2 h-2 rounded-full bg-[#C5A059]" />
               <h4 className="font-serif text-white font-bold text-base tracking-wide">
                 Contact Information
               </h4>
@@ -117,20 +117,20 @@ export function Footer() {
 
             <div className="space-y-2.5 text-xs text-[#999999]">
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#F6B83E] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
                 <span>United States • Global Missions Worldwide</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-[#F6B83E] shrink-0" />
+                <Mail className="w-4 h-4 text-[#C5A059] shrink-0" />
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
-                  className="hover:text-[#F6B83E] transition-colors"
+                  className="hover:text-[#C5A059] transition-colors"
                 >
                   {SITE_CONFIG.email}
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#F6B83E] shrink-0" />
+                <Phone className="w-4 h-4 text-[#C5A059] shrink-0" />
                 <span>(800) JUBOH-ORG</span>
               </div>
             </div>
@@ -138,7 +138,7 @@ export function Footer() {
             <div className="pt-2">
               <Link
                 href="/donate"
-                className="inline-flex items-center gap-1.5 text-xs text-[#F6B83E] font-semibold hover:underline"
+                className="inline-flex items-center gap-1.5 text-xs text-[#C5A059] font-semibold hover:underline"
               >
                 <Heart className="w-3.5 h-3.5 fill-current" />
                 100% Tax-Deductible Contribution
@@ -149,7 +149,7 @@ export function Footer() {
           {/* Column 4: Newsletter */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-2 h-2 rounded-full bg-[#F6B83E]" />
+              <span className="w-2 h-2 rounded-full bg-[#C5A059]" />
               <h4 className="font-serif text-white font-bold text-base tracking-wide">
                 Newsletter
               </h4>
@@ -163,9 +163,9 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar: Logo, Copyright & Legal */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-[#777777] gap-4">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-[#555D68] gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center border border-[#F6B83E]/30 shadow-2xs">
+            <div className="w-8 h-8 rounded-full bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center border border-[#C5A059]/30 shadow-2xs">
               <LogoIcon className="w-5 h-5" variant="gold" />
             </div>
             <span className="font-serif text-sm font-bold text-white tracking-tight">
@@ -186,7 +186,7 @@ export function Footer() {
             <Link href="/privacy" className="hover:text-[#cccccc] transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/donate" className="hover:text-[#F6B83E] transition-colors">
+            <Link href="/donate" className="hover:text-[#C5A059] transition-colors">
               Give / Donate
             </Link>
           </div>

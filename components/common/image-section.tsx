@@ -58,7 +58,7 @@ export function ImageSection({
 
         {/* Optional Overlay Badge (e.g., Campaign Count, Category) */}
         {overlayBadge && (
-          <div className="absolute top-4 left-4 z-10 bg-[#F6B83E] text-[#222222] text-xs font-bold px-3 py-1.5 rounded-sm shadow-md tracking-wider uppercase">
+          <div className="absolute top-4 left-4 z-10 bg-[#C5A059] text-[#111827] text-xs font-bold px-3 py-1.5 rounded-sm shadow-md tracking-wider uppercase">
             {overlayBadge}
           </div>
         )}
@@ -72,7 +72,7 @@ export function ImageSection({
       </div>
 
       {caption && (
-        <figcaption className="mt-2 text-xs text-[#777777] italic text-center">
+        <figcaption className="mt-2 text-xs text-[#555D68] italic text-center">
           {caption}
         </figcaption>
       )}

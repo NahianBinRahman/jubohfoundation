@@ -20,7 +20,7 @@ export function ProgramHero({
   imageAlt,
 }: ProgramHeroProps) {
   return (
-    <section className="relative w-full bg-[#222222] text-white py-24 md:py-32 overflow-hidden flex items-center">
+    <section className="relative w-full bg-[#111827] text-white py-24 md:py-32 overflow-hidden flex items-center">
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -31,13 +31,13 @@ export function ProgramHero({
           sizes="100vw"
           className="object-cover object-center brightness-[0.32] contrast-[1.08]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#222222] via-[#222222]/70 to-[#222222]/85" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#111827] via-[#111827]/70 to-[#111827]/85" />
       </div>
 
       <div className="container-custom relative z-10 w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div className="max-w-2xl">
           {/* Eyebrow / Tagline */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-xs border border-white/15 text-[#F6B83E] text-xs font-bold uppercase tracking-wider mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-xs border border-white/15 text-[#C5A059] text-xs font-bold uppercase tracking-wider mb-4">
             <Sparkles className="w-3 h-3 fill-current" />
             <span>{category}</span>
           </div>
@@ -56,15 +56,15 @@ export function ProgramHero({
           aria-label="Breadcrumb"
           className="flex items-center gap-1.5 text-xs font-medium text-neutral-300 bg-black/40 backdrop-blur-xs px-4 py-2.5 rounded-full border border-white/10 self-start md:self-auto shrink-0"
         >
-          <Link href="/" className="hover:text-[#F6B83E] transition-colors">
+          <Link href="/" className="hover:text-[#C5A059] transition-colors">
             Home
           </Link>
-          <ChevronRight className="w-3.5 h-3.5 text-[#F6B83E]" />
-          <Link href="/programs" className="hover:text-[#F6B83E] transition-colors">
+          <ChevronRight className="w-3.5 h-3.5 text-[#C5A059]" />
+          <Link href="/programs" className="hover:text-[#C5A059] transition-colors">
             Programs
           </Link>
-          <ChevronRight className="w-3.5 h-3.5 text-[#F6B83E] shrink-0" />
-          <span className="text-[#F6B83E] font-semibold whitespace-nowrap">
+          <ChevronRight className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
+          <span className="text-[#C5A059] font-semibold whitespace-nowrap">
             {title}
           </span>
         </nav>

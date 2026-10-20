@@ -101,7 +101,7 @@ export function AccordionItem({ value, children, className, ...props }: Accordio
       <div
         className={cn(
           "rounded-lg border border-[#E8E5DD] bg-white transition-all duration-200 overflow-hidden",
-          isOpen && "border-[#F6B83E] shadow-sm",
+          isOpen && "border-[#C5A059] shadow-sm",
           className
         )}
         {...props}
@@ -128,8 +128,8 @@ export function AccordionTrigger({
       onClick={() => toggleValue(value)}
       aria-expanded={isOpen}
       className={cn(
-        "flex w-full items-center justify-between p-5 sm:p-6 text-left font-serif text-lg sm:text-xl font-bold text-[#222222] transition-colors hover:text-[#F6B83E] focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#F6B83E]",
-        isOpen && "text-[#222222]",
+        "flex w-full items-center justify-between p-5 sm:p-6 text-left font-serif text-lg sm:text-xl font-bold text-[#111827] transition-colors hover:text-[#C5A059] focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#C5A059]",
+        isOpen && "text-[#111827]",
         className
       )}
       {...props}
@@ -137,8 +137,8 @@ export function AccordionTrigger({
       <span className="pr-4">{children}</span>
       <div
         className={cn(
-          "flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F8F6F1] text-[#222222] transition-transform duration-300",
-          isOpen && "rotate-180 bg-[#F6B83E] text-[#222222]"
+          "flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#F8F6F1] text-[#111827] transition-transform duration-300",
+          isOpen && "rotate-180 bg-[#C5A059] text-[#111827]"
         )}
       >
         <ChevronDown className="h-4 w-4" />
@@ -161,7 +161,7 @@ export function AccordionContent({
   return (
     <div
       className={cn(
-        "px-5 pb-6 sm:px-6 sm:pb-7 text-sm md:text-base text-[#777777] leading-relaxed border-t border-[#F8F6F1] pt-4 animate-in fade-in-50 duration-200",
+        "px-5 pb-6 sm:px-6 sm:pb-7 text-sm md:text-base text-[#555D68] leading-relaxed border-t border-[#F8F6F1] pt-4 animate-in fade-in-50 duration-200",
         className
       )}
       {...props}

@@ -35,7 +35,7 @@ export function TestimonialsGrid({
             >
               <div>
                 {/* Distinctive Solid Gold Double Quotation Mark (Matching Template) */}
-                <div className="text-[#F6B83E] mb-5">
+                <div className="text-[#C5A059] mb-5">
                   <svg
                     className="w-8 h-8 fill-current"
                     viewBox="0 0 24 24"
@@ -63,10 +63,10 @@ export function TestimonialsGrid({
                   />
                 </div>
                 <div className="flex flex-col text-left">
-                  <h4 className="font-serif text-base font-bold text-[#222222] leading-tight group-hover:text-[#F6B83E] transition-colors">
+                  <h4 className="font-serif text-base font-bold text-[#111827] leading-tight group-hover:text-[#C5A059] transition-colors">
                     {item.name}
                   </h4>
-                  <span className="text-xs text-[#777777] font-medium mt-0.5">
+                  <span className="text-xs text-[#555D68] font-medium mt-0.5">
                     {item.role}
                   </span>
                 </div>

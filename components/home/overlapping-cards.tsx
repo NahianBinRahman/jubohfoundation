@@ -25,7 +25,7 @@ export function OverlappingCards() {
           >
             <div className="flex flex-col items-center">
               {/* Outline Volunteer Group Icon with gentle hover scale */}
-              <div className="w-16 h-16 mb-5 flex items-center justify-center text-[#F6B83E] transition-transform duration-300 group-hover:scale-110">
+              <div className="w-16 h-16 mb-5 flex items-center justify-center text-[#C5A059] transition-transform duration-300 group-hover:scale-110">
                 <svg
                   className="w-14 h-14"
                   viewBox="0 0 64 64"
@@ -44,11 +44,11 @@ export function OverlappingCards() {
                 </svg>
               </div>
 
-              <h3 className="font-serif text-2xl font-bold text-[#222222] mb-3 group-hover:text-[#F6B83E] transition-colors">
+              <h3 className="font-serif text-2xl font-bold text-[#111827] mb-3 group-hover:text-[#C5A059] transition-colors">
                 Become a Volunteer
               </h3>
 
-              <p className="text-xs text-[#777777] leading-relaxed mb-6">
+              <p className="text-xs text-[#555D68] leading-relaxed mb-6">
                 Join our global team of dedicated mentors, teachers, and community
                 advocates making a tangible generational impact.
               </p>
@@ -56,7 +56,7 @@ export function OverlappingCards() {
 
             <Link
               href="/contact?topic=volunteer"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-xs uppercase tracking-widest py-3 px-8 transition-all duration-200 shadow-sm hover:shadow-md"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-[#C5A059] hover:bg-[#B38E46] text-[#111827] font-bold text-xs uppercase tracking-widest py-3 px-8 transition-all duration-200 shadow-sm hover:shadow-md"
             >
               JOIN NOW
             </Link>
@@ -75,7 +75,7 @@ export function OverlappingCards() {
           >
             <div className="flex flex-col items-center">
               {/* Outline Handshake & Coin Icon with gentle hover scale */}
-              <div className="w-16 h-16 mb-5 flex items-center justify-center text-[#F6B83E] transition-transform duration-300 group-hover:scale-110">
+              <div className="w-16 h-16 mb-5 flex items-center justify-center text-[#C5A059] transition-transform duration-300 group-hover:scale-110">
                 <svg
                   className="w-14 h-14"
                   viewBox="0 0 64 64"
@@ -94,11 +94,11 @@ export function OverlappingCards() {
                 </svg>
               </div>
 
-              <h3 className="font-serif text-2xl font-bold text-[#222222] mb-3 group-hover:text-[#F6B83E] transition-colors">
+              <h3 className="font-serif text-2xl font-bold text-[#111827] mb-3 group-hover:text-[#C5A059] transition-colors">
                 Quick Fundraising
               </h3>
 
-              <p className="text-xs text-[#777777] leading-relaxed mb-6">
+              <p className="text-xs text-[#555D68] leading-relaxed mb-6">
                 Support transparent, community-led campaigns supporting student
                 scholarships, workforce housing, and critical relief.
               </p>
@@ -106,7 +106,7 @@ export function OverlappingCards() {
 
             <Link
               href="/programs"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-xs uppercase tracking-widest py-3 px-8 transition-all duration-200 shadow-sm hover:shadow-md active:scale-95"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-[#C5A059] hover:bg-[#B38E46] text-[#111827] font-bold text-xs uppercase tracking-widest py-3 px-8 transition-all duration-200 shadow-sm hover:shadow-md active:scale-95"
             >
               CHECK NOW
             </Link>
@@ -124,10 +124,10 @@ export function OverlappingCards() {
             className="h-full grid grid-cols-1 sm:grid-cols-2 rounded-sm shadow-xl overflow-hidden transition-shadow duration-300 hover:shadow-2xl group cursor-pointer"
           >
             {/* Left 50%: Solid Gold Panel */}
-            <div className="bg-[#F6B83E] p-8 sm:p-9 flex flex-col items-center text-center justify-between text-[#222222]">
+            <div className="bg-[#C5A059] p-8 sm:p-9 flex flex-col items-center text-center justify-between text-[#111827]">
               <div className="flex flex-col items-center">
                 {/* Hand Holding Coin Icon */}
-                <div className="w-16 h-16 mb-5 flex items-center justify-center text-[#222222] transition-transform duration-300 group-hover:scale-110">
+                <div className="w-16 h-16 mb-5 flex items-center justify-center text-[#111827] transition-transform duration-300 group-hover:scale-110">
                   <svg
                     className="w-14 h-14"
                     viewBox="0 0 64 64"
@@ -144,11 +144,11 @@ export function OverlappingCards() {
                   </svg>
                 </div>
 
-                <h3 className="font-serif text-2xl font-bold text-[#222222] mb-3">
+                <h3 className="font-serif text-2xl font-bold text-[#111827] mb-3">
                   Make Donation
                 </h3>
 
-                <p className="text-xs text-[#222222]/85 leading-relaxed mb-6 font-medium">
+                <p className="text-xs text-[#111827]/85 leading-relaxed mb-6 font-medium">
                   Your charitable gift is 100% tax-deductible and directly funds
                   education, housing initiatives, and sustainable outreach.
                 </p>
@@ -156,7 +156,7 @@ export function OverlappingCards() {
 
               <Link
                 href="/donate"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#222222] hover:bg-black text-white font-bold text-xs uppercase tracking-widest py-3 px-8 transition-all duration-200 shadow-md hover:shadow-lg"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#111827] hover:bg-black text-white font-bold text-xs uppercase tracking-widest py-3 px-8 transition-all duration-200 shadow-md hover:shadow-lg"
               >
                 JOIN NOW
               </Link>

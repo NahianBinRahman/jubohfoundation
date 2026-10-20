@@ -74,7 +74,7 @@ export function GalleryLightbox({
       {/* Top Bar with Counter and Close Button */}
       <div className="absolute top-0 left-0 right-0 z-30 p-4 sm:p-6 flex items-center justify-between text-white border-b border-white/10 bg-black/40 backdrop-blur-xs">
         <div className="flex items-center gap-3">
-          <span className="text-[11px] font-bold uppercase tracking-wider text-[#F6B83E] px-2.5 py-1 rounded-xs bg-white/10">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-[#C5A059] px-2.5 py-1 rounded-xs bg-white/10">
             {currentItem.category}
           </span>
           <span className="text-xs text-neutral-400 font-medium">
@@ -84,7 +84,7 @@ export function GalleryLightbox({
 
         <button
           onClick={onClose}
-          className="p-2 rounded-full bg-white/10 hover:bg-[#F6B83E] hover:text-[#222222] text-white transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#F6B83E]"
+          className="p-2 rounded-full bg-white/10 hover:bg-[#C5A059] hover:text-[#111827] text-white transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#C5A059]"
           aria-label="Close image lightbox"
         >
           <X className="w-5 h-5" />
@@ -106,7 +106,7 @@ export function GalleryLightbox({
       {/* Navigation Arrows */}
       <button
         onClick={handlePrev}
-        className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/60 hover:bg-[#F6B83E] text-white hover:text-[#222222] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#F6B83E]"
+        className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/60 hover:bg-[#C5A059] text-white hover:text-[#111827] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#C5A059]"
         aria-label="Previous photograph"
       >
         <ChevronLeft className="w-6 h-6" />
@@ -114,7 +114,7 @@ export function GalleryLightbox({
 
       <button
         onClick={handleNext}
-        className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/60 hover:bg-[#F6B83E] text-white hover:text-[#222222] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#F6B83E]"
+        className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-black/60 hover:bg-[#C5A059] text-white hover:text-[#111827] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#C5A059]"
         aria-label="Next photograph"
       >
         <ChevronRight className="w-6 h-6" />

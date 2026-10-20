@@ -31,9 +31,9 @@ export function DonationCTA() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#222222]/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#111827]/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#F6B83E] block mb-1">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#C5A059] block mb-1">
                     100% Tax-Deductible Charitable Giving
                   </span>
                   <p className="font-serif text-lg font-bold">
@@ -48,15 +48,15 @@ export function DonationCTA() {
           <div className="lg:col-span-6 space-y-6">
             <ScrollReveal direction="left" distance={36} duration={0.8}>
               <div className="space-y-2">
-                <span className="eyebrow-script text-xl text-[#F6B83E] block">
+                <span className="eyebrow-script text-xl text-[#C5A059] block">
                   Make An Impact
                 </span>
-                <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#222222] tracking-tight leading-tight">
+                <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#111827] tracking-tight leading-tight">
                   Give to JUBOH Foundation
                 </h2>
               </div>
 
-              <p className="text-sm md:text-base text-[#777777] leading-relaxed mt-4">
+              <p className="text-sm md:text-base text-[#555D68] leading-relaxed mt-4">
                 JUBOH Foundation is an IRS-recognized 501(c)(3) registered non-profit
                 organization dedicated to the advancement of people all around the
                 world. Your 100% tax-deductible charitable donation of any amount
@@ -66,7 +66,7 @@ export function DonationCTA() {
 
               {/* Preset Donation Amounts Selector */}
               <div className="pt-4 space-y-3">
-                <span className="text-xs font-bold text-[#222222] uppercase tracking-wider block">
+                <span className="text-xs font-bold text-[#111827] uppercase tracking-wider block">
                   Select Giving Level
                 </span>
                 <div className="flex flex-wrap gap-2.5">
@@ -81,8 +81,8 @@ export function DonationCTA() {
                       className={cn(
                         "px-4 py-2.5 rounded-sm text-xs font-bold transition-all duration-150 border cursor-pointer active:scale-95",
                         selectedAmount === amt
-                          ? "bg-[#F6B83E] text-[#222222] border-[#F6B83E] shadow-xs"
-                          : "bg-[#F8F6F1] text-[#222222] border-[#E8E5DD] hover:border-[#F6B83E]"
+                          ? "bg-[#C5A059] text-[#111827] border-[#C5A059] shadow-xs"
+                          : "bg-[#F8F6F1] text-[#111827] border-[#E8E5DD] hover:border-[#C5A059]"
                       )}
                     >
                       ${amt}
@@ -94,8 +94,8 @@ export function DonationCTA() {
                     className={cn(
                       "px-4 py-2.5 rounded-sm text-xs font-bold transition-all duration-150 border cursor-pointer active:scale-95",
                       selectedAmount === "custom"
-                        ? "bg-[#F6B83E] text-[#222222] border-[#F6B83E] shadow-xs"
-                        : "bg-[#F8F6F1] text-[#222222] border-[#E8E5DD] hover:border-[#F6B83E]"
+                        ? "bg-[#C5A059] text-[#111827] border-[#C5A059] shadow-xs"
+                        : "bg-[#F8F6F1] text-[#111827] border-[#E8E5DD] hover:border-[#C5A059]"
                     )}
                   >
                     Custom
@@ -119,8 +119,8 @@ export function DonationCTA() {
                   </PrimaryButton>
                 </div>
 
-                <div className="flex items-center gap-2 text-xs text-[#777777]">
-                  <ShieldCheck className="w-4 h-4 text-[#F6B83E]" />
+                <div className="flex items-center gap-2 text-xs text-[#555D68]">
+                  <ShieldCheck className="w-4 h-4 text-[#C5A059]" />
                   <span>
                     Official 501(c)(3) tax receipt provided for every contribution.
                   </span>

@@ -22,14 +22,14 @@ export function PrimaryButton({
   ...props
 }: PrimaryButtonProps) {
   const baseStyles =
-    "group inline-flex items-center justify-center font-semibold tracking-wider uppercase transition-all duration-200 select-none cursor-pointer rounded-sm active:scale-[0.96] active:translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F6B83E]"
+    "group inline-flex items-center justify-center font-semibold tracking-wider uppercase transition-all duration-200 select-none cursor-pointer rounded-sm active:scale-[0.96] active:translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A059]"
 
   const variantStyles = {
-    gold: "bg-[#F6B83E] text-[#222222] hover:bg-[#e0a32e] shadow-sm",
-    charcoal: "bg-[#222222] text-white hover:bg-[#333333] shadow-sm",
-    white: "bg-white text-[#222222] hover:bg-neutral-100 shadow-sm",
+    gold: "bg-[#C5A059] text-[#111827] hover:bg-[#B38E46] shadow-sm",
+    charcoal: "bg-[#111827] text-white hover:bg-[#333333] shadow-sm",
+    white: "bg-white text-[#111827] hover:bg-neutral-100 shadow-sm",
     outlineGold:
-      "border-2 border-[#F6B83E] text-[#222222] hover:bg-[#F6B83E] hover:text-[#222222]",
+      "border-2 border-[#C5A059] text-[#111827] hover:bg-[#C5A059] hover:text-[#111827]",
   }[variant]
 
   const sizeStyles = {

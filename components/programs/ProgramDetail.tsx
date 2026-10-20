@@ -17,10 +17,10 @@ export function ProgramDetail({ program }: ProgramDetailProps) {
           {/* Main Editorial Content Column (8 cols) */}
           <div className="lg:col-span-8 space-y-8">
             <div className="space-y-3">
-              <span className="eyebrow-script text-xl text-[#F6B83E] block">
+              <span className="eyebrow-script text-xl text-[#C5A059] block">
                 Overview & Impact
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#222222] tracking-tight leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#111827] tracking-tight leading-tight">
                 {program.overview}
               </h2>
             </div>
@@ -35,13 +35,13 @@ export function ProgramDetail({ program }: ProgramDetailProps) {
                 sizes="(max-width: 1024px) 100vw, 66vw"
                 className="object-cover object-center"
               />
-              <div className="absolute top-4 left-4 bg-[#222222]/90 backdrop-blur-xs text-[#F6B83E] text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-sm">
+              <div className="absolute top-4 left-4 bg-[#111827]/90 backdrop-blur-xs text-[#C5A059] text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-sm">
                 {program.category}
               </div>
             </div>
 
             {/* Narrative Paragraphs */}
-            <div className="space-y-4 text-sm sm:text-base text-[#555555] leading-relaxed pt-2">
+            <div className="space-y-4 text-sm sm:text-base text-[#4B5563] leading-relaxed pt-2">
               {program.fullDescription.map((p, idx) => (
                 <p key={idx} className="leading-relaxed">
                   {p}
@@ -55,10 +55,10 @@ export function ProgramDetail({ program }: ProgramDetailProps) {
             {/* Focus Card */}
             <div className="bg-[#F8F6F1] p-7 rounded-xl border border-[#E8E5DD] shadow-2xs space-y-5">
               <div className="flex items-center gap-2.5 border-b border-[#E8E5DD] pb-3">
-                <div className="w-8 h-8 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center">
+                <div className="w-8 h-8 rounded-full bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center">
                   <Sparkles className="w-4 h-4 fill-current" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-[#222222]">
+                <h3 className="font-serif text-lg font-bold text-[#111827]">
                   Strategic Focus
                 </h3>
               </div>
@@ -66,7 +66,7 @@ export function ProgramDetail({ program }: ProgramDetailProps) {
               <ul className="space-y-3 text-xs sm:text-sm text-[#444444]">
                 {program.keyFocus.map((focus, idx) => (
                   <li key={idx} className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-[#F6B83E] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
                     <span>{focus}</span>
                   </li>
                 ))}
@@ -80,7 +80,7 @@ export function ProgramDetail({ program }: ProgramDetailProps) {
                 </Link>
                 <Link href="/donate" className="block w-full">
                   <Button variant="secondary" className="w-full text-xs font-medium gap-1.5">
-                    <Heart className="w-3.5 h-3.5 text-[#F6B83E] fill-current" />
+                    <Heart className="w-3.5 h-3.5 text-[#C5A059] fill-current" />
                     Support This Initiative
                   </Button>
                 </Link>
@@ -89,12 +89,12 @@ export function ProgramDetail({ program }: ProgramDetailProps) {
 
             {/* 501(c)(3) Transparency Box */}
             <div className="bg-white p-5 rounded-lg border border-[#E8E5DD] shadow-2xs flex items-center gap-3">
-              <ShieldCheck className="w-8 h-8 text-[#F6B83E] shrink-0" />
+              <ShieldCheck className="w-8 h-8 text-[#C5A059] shrink-0" />
               <div className="text-xs">
-                <span className="font-bold text-[#222222] block">
+                <span className="font-bold text-[#111827] block">
                   IRS-Recognized 501(c)(3)
                 </span>
-                <span className="text-[#777777]">
+                <span className="text-[#555D68]">
                   All donations are 100% tax-deductible as allowed by law.
                 </span>
               </div>

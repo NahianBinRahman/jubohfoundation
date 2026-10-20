@@ -61,7 +61,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
 
       <main className="flex-1">
         {/* Inner-Page Hero */}
-        <section className="relative w-full bg-[#222222] text-white py-24 md:py-32 overflow-hidden flex items-center">
+        <section className="relative w-full bg-[#111827] text-white py-24 md:py-32 overflow-hidden flex items-center">
           <div className="absolute inset-0 z-0">
             <Image
               src={event.image}
@@ -71,12 +71,12 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
               sizes="100vw"
               className="object-cover object-center brightness-[0.32] contrast-[1.08]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#222222] via-[#222222]/70 to-[#222222]/85" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#111827] via-[#111827]/70 to-[#111827]/85" />
           </div>
 
           <div className="container-custom relative z-10 w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="max-w-2xl space-y-3">
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#F6B83E] block">
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A059] block">
                 {event.category}
               </span>
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.15]">
@@ -89,15 +89,15 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
               aria-label="Breadcrumb"
               className="flex items-center gap-1.5 text-xs font-medium text-neutral-300 bg-black/40 backdrop-blur-xs px-4 py-2 rounded-full border border-white/10 self-start md:self-auto shrink-0"
             >
-              <Link href="/" className="hover:text-[#F6B83E] transition-colors">
+              <Link href="/" className="hover:text-[#C5A059] transition-colors">
                 Home
               </Link>
-              <ChevronRight className="w-3.5 h-3.5 text-[#F6B83E]" />
-              <Link href="/events" className="hover:text-[#F6B83E] transition-colors">
+              <ChevronRight className="w-3.5 h-3.5 text-[#C5A059]" />
+              <Link href="/events" className="hover:text-[#C5A059] transition-colors">
                 Events
               </Link>
-              <ChevronRight className="w-3.5 h-3.5 text-[#F6B83E]" />
-              <span className="text-[#F6B83E] font-semibold truncate max-w-[140px]">
+              <ChevronRight className="w-3.5 h-3.5 text-[#C5A059]" />
+              <span className="text-[#C5A059] font-semibold truncate max-w-[140px]">
                 {event.title}
               </span>
             </nav>
@@ -120,7 +120,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
                     sizes="(max-width: 1024px) 100vw, 66vw"
                     className="object-cover object-center"
                   />
-                  <div className="absolute top-4 left-4 bg-[#F6B83E] text-[#222222] rounded-xs shadow-md p-2 flex flex-col items-center justify-center min-w-[54px] text-center">
+                  <div className="absolute top-4 left-4 bg-[#C5A059] text-[#111827] rounded-xs shadow-md p-2 flex flex-col items-center justify-center min-w-[54px] text-center">
                     <span className="font-serif text-xl font-bold leading-none">
                       {event.displayDay}
                     </span>
@@ -132,15 +132,15 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
 
                 {/* Event Overview & Content */}
                 <div className="space-y-4">
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#222222]">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#111827]">
                     About This Event
                   </h2>
-                  <p className="text-sm sm:text-base text-[#555555] leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#4B5563] leading-relaxed">
                     {event.description}
                   </p>
                   {event.content &&
                     event.content.map((para, idx) => (
-                      <p key={idx} className="text-sm sm:text-base text-[#555555] leading-relaxed">
+                      <p key={idx} className="text-sm sm:text-base text-[#4B5563] leading-relaxed">
                         {para}
                       </p>
                     ))}
@@ -149,13 +149,13 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
                 {/* Objectives if present */}
                 {event.objectives && event.objectives.length > 0 && (
                   <div className="bg-[#F8F6F1] p-7 rounded-xl border border-[#E8E5DD] space-y-3">
-                    <h3 className="font-serif text-xl font-bold text-[#222222]">
+                    <h3 className="font-serif text-xl font-bold text-[#111827]">
                       Event Objectives & Highlights
                     </h3>
                     <ul className="space-y-2 text-xs sm:text-sm text-[#444444]">
                       {event.objectives.map((obj, idx) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <span className="text-[#F6B83E] font-bold">•</span>
+                          <span className="text-[#C5A059] font-bold">•</span>
                           <span>{obj}</span>
                         </li>
                       ))}
@@ -174,23 +174,23 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
               {/* Right Sidebar: Details Card & Metadata (4 cols) */}
               <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
                 <div className="bg-[#F8F6F1] p-7 rounded-xl border border-[#E8E5DD] shadow-2xs space-y-5">
-                  <h3 className="font-serif text-xl font-bold text-[#222222] border-b border-[#E8E5DD] pb-3">
+                  <h3 className="font-serif text-xl font-bold text-[#111827] border-b border-[#E8E5DD] pb-3">
                     Event Details
                   </h3>
 
-                  <div className="space-y-4 text-xs sm:text-sm text-[#555555]">
+                  <div className="space-y-4 text-xs sm:text-sm text-[#4B5563]">
                     <div className="flex items-start gap-3">
-                      <Calendar className="w-4 h-4 text-[#F6B83E] shrink-0 mt-0.5" />
+                      <Calendar className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
                       <div>
-                        <span className="font-bold text-[#222222] block">Date</span>
+                        <span className="font-bold text-[#111827] block">Date</span>
                         <span>{event.date}</span>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <Clock className="w-4 h-4 text-[#F6B83E] shrink-0 mt-0.5" />
+                      <Clock className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
                       <div>
-                        <span className="font-bold text-[#222222] block">Time</span>
+                        <span className="font-bold text-[#111827] block">Time</span>
                         <span>
                           {event.startTime} - {event.endTime}
                         </span>
@@ -198,9 +198,9 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <MapPin className="w-4 h-4 text-[#F6B83E] shrink-0 mt-0.5" />
+                      <MapPin className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
                       <div>
-                        <span className="font-bold text-[#222222] block">Location</span>
+                        <span className="font-bold text-[#111827] block">Location</span>
                         <span>{event.location}</span>
                         {event.venueAddress && (
                           <span className="text-neutral-400 block text-xs">
@@ -211,12 +211,12 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
                     </div>
 
                     <div className="flex items-start gap-3">
-                      <Mail className="w-4 h-4 text-[#F6B83E] shrink-0 mt-0.5" />
+                      <Mail className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
                       <div>
-                        <span className="font-bold text-[#222222] block">Organizer</span>
+                        <span className="font-bold text-[#111827] block">Organizer</span>
                         <a
                           href="mailto:info@jubohfoundation.org"
-                          className="hover:text-[#F6B83E] transition-colors"
+                          className="hover:text-[#C5A059] transition-colors"
                         >
                           info@jubohfoundation.org
                         </a>
@@ -225,8 +225,8 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
                   </div>
 
                   <div className="pt-4 border-t border-[#E8E5DD]">
-                    <span className="inline-flex items-center gap-1.5 text-xs text-[#777777]">
-                      <ShieldCheck className="w-4 h-4 text-[#F6B83E]" />
+                    <span className="inline-flex items-center gap-1.5 text-xs text-[#555D68]">
+                      <ShieldCheck className="w-4 h-4 text-[#C5A059]" />
                       Official JUBOH Foundation Event
                     </span>
                   </div>

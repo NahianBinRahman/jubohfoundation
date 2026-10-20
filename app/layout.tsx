@@ -36,7 +36,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${dmSans.variable} ${caveat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-white text-[#222222]">
+      <body className="min-h-full flex flex-col font-sans bg-white text-[#111827]">
         {children}
       </body>
     </html>

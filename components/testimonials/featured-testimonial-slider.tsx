@@ -27,10 +27,10 @@ export function FeaturedTestimonialSlider({ className }: FeaturedTestimonialSlid
     <div className={className}>
       <div className="relative rounded-2xl bg-[#44443c] text-white p-8 sm:p-12 md:p-16 lg:p-20 shadow-2xl overflow-hidden text-center max-w-5xl mx-auto border border-neutral-700/40">
         {/* Subtle Warm Accent Ambient Lighting */}
-        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#F6B83E]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#C5A059]/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Small Golden Eyebrow */}
-        <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#F6B83E] block mb-6">
+        <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#C5A059] block mb-6">
           TESTIMONIALS
         </span>
 
@@ -58,7 +58,7 @@ export function FeaturedTestimonialSlider({ className }: FeaturedTestimonialSlid
                 <h4 className="font-serif text-base sm:text-lg font-bold text-white tracking-wide">
                   {current.name}
                 </h4>
-                <p className="text-xs sm:text-sm font-medium text-[#F6B83E] mt-1">
+                <p className="text-xs sm:text-sm font-medium text-[#C5A059] mt-1">
                   {current.role}
                 </p>
               </div>
@@ -75,7 +75,7 @@ export function FeaturedTestimonialSlider({ className }: FeaturedTestimonialSlid
               aria-label={`Go to slide ${idx + 1}`}
               className={`transition-all duration-300 rounded-full cursor-pointer ${
                 currentIndex === idx
-                  ? "w-3 h-3 bg-[#F6B83E] scale-110 shadow-xs"
+                  ? "w-3 h-3 bg-[#C5A059] scale-110 shadow-xs"
                   : "w-2.5 h-2.5 bg-white/30 hover:bg-white/60"
               }`}
             />

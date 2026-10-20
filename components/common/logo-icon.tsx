@@ -12,7 +12,7 @@ export function LogoIcon({
   variant = "gold",
 }: LogoIconProps) {
   // Color presets
-  const primaryGold = variant === "white" ? "#FFFFFF" : variant === "dark" ? "#222222" : "#F6B83E"
+  const primaryGold = variant === "white" ? "#FFFFFF" : variant === "dark" ? "#111827" : "#C5A059"
   const gradientId = `juboh-gold-grad-${variant}`
   const centerGlowId = `juboh-center-glow-${variant}`
   const handId = `hand-unity-${variant}`
@@ -31,14 +31,14 @@ export function LogoIcon({
         {variant === "gold" ? (
           <>
             <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#FFDE82" />
-              <stop offset="50%" stopColor="#F6B83E" />
-              <stop offset="100%" stopColor="#D48B14" />
+              <stop offset="0%" stopColor="#E6CE9B" />
+              <stop offset="50%" stopColor="#C5A059" />
+              <stop offset="100%" stopColor="#9E7B44" />
             </linearGradient>
             <radialGradient id={centerGlowId} cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#FFF2B8" />
-              <stop offset="60%" stopColor="#F6B83E" />
-              <stop offset="100%" stopColor="#D48B14" />
+              <stop offset="0%" stopColor="#F3E6C8" />
+              <stop offset="60%" stopColor="#C5A059" />
+              <stop offset="100%" stopColor="#9E7B44" />
             </radialGradient>
           </>
         ) : (

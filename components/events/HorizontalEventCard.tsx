@@ -13,7 +13,7 @@ interface HorizontalEventCardProps {
 
 export function HorizontalEventCard({ event, index = 0 }: HorizontalEventCardProps) {
   // Preset fallback badge colors matching the reference template
-  const badgeColors = ["#FF5538", "#F6B83E", "#4DB6AC"]
+  const badgeColors = ["#FF5538", "#C5A059", "#4DB6AC"]
   const currentBadgeColor = event.badgeColor || badgeColors[index % badgeColors.length]
 
   return (
@@ -47,7 +47,7 @@ export function HorizontalEventCard({ event, index = 0 }: HorizontalEventCardPro
               {event.title}
             </h3>
           </Link>
-          <p className="text-sm md:text-base text-[#777777] font-normal leading-relaxed mt-2 line-clamp-2">
+          <p className="text-sm md:text-base text-[#555D68] font-normal leading-relaxed mt-2 line-clamp-2">
             {event.description}
           </p>
         </div>
@@ -57,13 +57,13 @@ export function HorizontalEventCard({ event, index = 0 }: HorizontalEventCardPro
           {/* Calendar Date */}
           <div className="flex items-center gap-2">
             <Calendar className="w-4 h-4 text-[#FF5538] shrink-0" />
-            <span className="text-[#555555]">{event.dateFormatted || event.date}</span>
+            <span className="text-[#4B5563]">{event.dateFormatted || event.date}</span>
           </div>
 
           {/* Speaker */}
           <div className="flex items-center gap-2">
             <User className="w-4 h-4 text-[#FF5538] shrink-0" />
-            <span className="text-[#555555]">
+            <span className="text-[#4B5563]">
               Speaker: <span className="text-[#333333] font-semibold">{event.speaker}</span>
             </span>
           </div>
@@ -71,7 +71,7 @@ export function HorizontalEventCard({ event, index = 0 }: HorizontalEventCardPro
           {/* Subject */}
           <div className="flex items-center gap-2">
             <FileEdit className="w-4 h-4 text-[#FF5538] shrink-0" />
-            <span className="text-[#555555]">
+            <span className="text-[#4B5563]">
               Subject: <span className="text-[#333333] font-semibold">{event.subject}</span>
             </span>
           </div>
@@ -82,7 +82,7 @@ export function HorizontalEventCard({ event, index = 0 }: HorizontalEventCardPro
       <div className="hidden lg:flex items-center justify-center shrink-0 pl-2">
         <Link
           href={`/events/${event.slug}`}
-          className="w-11 h-11 rounded-full bg-[#F8F6F1] hover:bg-[#FF5538] text-[#222222] hover:text-white flex items-center justify-center transition-all duration-200 shadow-2xs group-hover:translate-x-1"
+          className="w-11 h-11 rounded-full bg-[#F8F6F1] hover:bg-[#FF5538] text-[#111827] hover:text-white flex items-center justify-center transition-all duration-200 shadow-2xs group-hover:translate-x-1"
           aria-label={`View details for ${event.title}`}
         >
           <ArrowRight className="w-5 h-5" />

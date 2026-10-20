@@ -49,8 +49,8 @@ export function NewsletterForm({
   return (
     <div className={cn("w-full space-y-2", className)}>
       {feedback.type === "success" ? (
-        <div className="flex items-center gap-2 p-3 rounded-md bg-[#F6B83E]/15 border border-[#F6B83E]/40 text-[#F6B83E] text-xs font-medium animate-in fade-in duration-300">
-          <Check className="w-4 h-4 text-[#F6B83E] shrink-0" />
+        <div className="flex items-center gap-2 p-3 rounded-md bg-[#C5A059]/15 border border-[#C5A059]/40 text-[#C5A059] text-xs font-medium animate-in fade-in duration-300">
+          <Check className="w-4 h-4 text-[#C5A059] shrink-0" />
           <span>{feedback.message}</span>
         </div>
       ) : (
@@ -76,16 +76,16 @@ export function NewsletterForm({
             disabled={isPending}
             aria-label="Email address for foundation newsletter"
             className={cn(
-              "text-xs px-3.5 py-2.5 rounded-sm focus:outline-hidden focus:ring-1 focus:ring-[#F6B83E] transition-all w-full disabled:opacity-50",
+              "text-xs px-3.5 py-2.5 rounded-sm focus:outline-hidden focus:ring-1 focus:ring-[#C5A059] transition-all w-full disabled:opacity-50",
               variant === "dark"
-                ? "bg-neutral-900 border border-neutral-700 text-white placeholder-neutral-500 focus:border-[#F6B83E]"
-                : "bg-white border border-[#E8E5DD] text-[#222222] placeholder-neutral-400 focus:border-[#F6B83E]"
+                ? "bg-neutral-900 border border-neutral-700 text-white placeholder-neutral-500 focus:border-[#C5A059]"
+                : "bg-white border border-[#E8E5DD] text-[#111827] placeholder-neutral-400 focus:border-[#C5A059]"
             )}
           />
           <button
             type="submit"
             disabled={isPending}
-            className="bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-semibold px-4 text-xs tracking-wider uppercase rounded-sm transition-colors cursor-pointer flex items-center justify-center shrink-0 shadow-xs disabled:opacity-50"
+            className="bg-[#C5A059] hover:bg-[#B38E46] text-[#111827] font-semibold px-4 text-xs tracking-wider uppercase rounded-sm transition-colors cursor-pointer flex items-center justify-center shrink-0 shadow-xs disabled:opacity-50"
           >
             {isPending ? (
               <Loader2 className="w-3.5 h-3.5 animate-spin" />

@@ -60,9 +60,9 @@ export default function ContactPage() {
         {/* Section E: Get Involved Compact CTA */}
         <section className="py-16 bg-white border-t border-[#E8E5DD]">
           <div className="container-custom">
-            <div className="bg-[#222222] rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden space-y-5">
+            <div className="bg-[#111827] rounded-2xl p-8 sm:p-12 text-center text-white relative overflow-hidden space-y-5">
               <div className="max-w-xl mx-auto space-y-2">
-                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#F6B83E] block">
+                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C5A059] block">
                   Collaborative Impact
                 </span>
                 <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white tracking-tight">

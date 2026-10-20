@@ -44,7 +44,7 @@ const IMPACT_AREAS = [
 
 export function ImpactStatement() {
   return (
-    <section className="relative py-24 md:py-32 bg-[#222222] text-white overflow-hidden">
+    <section className="relative py-24 md:py-32 bg-[#111827] text-white overflow-hidden">
       {/* Background Photography with Dark Atmospheric Gradient */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -54,7 +54,7 @@ export function ImpactStatement() {
           sizes="100vw"
           className="object-cover object-center brightness-[0.25] contrast-[1.1]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#222222] via-[#222222]/90 to-[#222222]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#111827] via-[#111827]/90 to-[#111827]/80" />
       </div>
 
       <div className="container-custom relative z-10">
@@ -63,7 +63,7 @@ export function ImpactStatement() {
           <div className="lg:col-span-6 space-y-8">
             <ScrollReveal direction="left" distance={30}>
               <div className="space-y-3">
-                <span className="eyebrow-script text-xl text-[#F6B83E] block">
+                <span className="eyebrow-script text-xl text-[#C5A059] block">
                   Universal Impact
                 </span>
                 <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight">
@@ -80,12 +80,12 @@ export function ImpactStatement() {
               </p>
 
               {/* Quote Accent Card */}
-              <div className="border-l-2 border-[#F6B83E] pl-6 py-2 bg-white/5 rounded-r-md mt-6">
+              <div className="border-l-2 border-[#C5A059] pl-6 py-2 bg-white/5 rounded-r-md mt-6">
                 <p className="font-serif italic text-sm sm:text-base text-neutral-200">
                   &ldquo;I have found that among its other benefits, giving
                   liberates the soul of the giver.&rdquo;
                 </p>
-                <span className="block text-[11px] uppercase tracking-wider text-[#F6B83E] font-semibold mt-2">
+                <span className="block text-[11px] uppercase tracking-wider text-[#C5A059] font-semibold mt-2">
                   — Maya Angelou
                 </span>
               </div>
@@ -107,10 +107,10 @@ export function ImpactStatement() {
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.98 }}
                     transition={{ duration: 0.2 }}
-                    className="p-5 rounded-md bg-white/5 border border-white/10 hover:border-[#F6B83E]/60 hover:bg-white/10 transition-colors duration-200 h-full flex flex-col justify-between cursor-pointer"
+                    className="p-5 rounded-md bg-white/5 border border-white/10 hover:border-[#C5A059]/60 hover:bg-white/10 transition-colors duration-200 h-full flex flex-col justify-between cursor-pointer"
                   >
                     <div>
-                      <span className="font-serif text-2xl font-bold text-[#F6B83E] block mb-2 opacity-90">
+                      <span className="font-serif text-2xl font-bold text-[#C5A059] block mb-2 opacity-90">
                         {area.number}
                       </span>
                       <h4 className="font-serif text-sm font-bold text-white mb-2 leading-snug">

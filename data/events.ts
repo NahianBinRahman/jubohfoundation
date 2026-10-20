@@ -30,7 +30,7 @@ export interface EventItem {
   registrationEnabled: boolean
   featured?: boolean
   isIllustrative?: boolean
-  badgeColor: string // e.g. "#FF5538" (Coral), "#F6B83E" (Gold), "#4DB6AC" (Teal)
+  badgeColor: string // e.g. "#FF5538" (Coral), "#C5A059" (Gold), "#4DB6AC" (Teal)
   speaker: string
   subject: string
 }
@@ -96,7 +96,7 @@ export const EVENTS: EventItem[] = [
     category: "Youth Development",
     registrationEnabled: true,
     featured: false,
-    badgeColor: "#F6B83E", // Vibrant Amber/Gold (Card 2)
+    badgeColor: "#C5A059", // Vibrant Amber/Gold (Card 2)
     speaker: "Anika Carter",
     subject: "Youth Leadership, Education",
   },

@@ -32,7 +32,7 @@ export function AboutPreview() {
                 <button
                   onClick={() => setVideoOpen(true)}
                   style={{ top: "20.4%", left: "84%", width: "9.8%", height: "5.5%" }}
-                  className="absolute bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-115 cursor-pointer z-10"
+                  className="absolute bg-[#C5A059] hover:bg-[#B38E46] text-[#111827] flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-115 cursor-pointer z-10"
                   aria-label="Play About Us video"
                 >
                   <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-current ml-0.5" />
@@ -47,11 +47,11 @@ export function AboutPreview() {
           <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
             {/* Script Eyebrow & Headline */}
             <ScrollReveal direction="up" distance={28} duration={0.7}>
-              <span className="eyebrow-script text-[#F6B83E] text-2xl sm:text-3xl font-normal block mb-2">
+              <span className="eyebrow-script text-[#C5A059] text-2xl sm:text-3xl font-normal block mb-2">
                 ABOUT US
               </span>
 
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#222222] tracking-tight leading-[1.18]">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#111827] tracking-tight leading-[1.18]">
                 We Are In A Mission To Help The Helpless
               </h2>
             </ScrollReveal>
@@ -59,11 +59,11 @@ export function AboutPreview() {
             {/* Exact Authentic About Us Copy */}
             <ScrollReveal direction="up" distance={24} delay={0.1} duration={0.7}>
               <div className="space-y-3.5">
-                <p className="text-sm md:text-base text-[#777777] leading-relaxed">
+                <p className="text-sm md:text-base text-[#555D68] leading-relaxed">
                   The JUBOH Foundation, founded by Jalen &ldquo;JUBOH&rdquo; Uboh, is a United States IRS-recognized 501(c)3 non-profit organization and charitable arm of the JUBOH Companies global organization.
                 </p>
-                <p className="text-sm md:text-base text-[#777777] leading-relaxed">
-                  The JUBOH Foundation was founded in 2020 with the purpose to <strong className="text-[#222222] font-semibold">Educate, Inspire, and to Empower</strong> the lives of those often forgotten; the marginalized, the left behind, and the most vulnerable in our society.
+                <p className="text-sm md:text-base text-[#555D68] leading-relaxed">
+                  The JUBOH Foundation was founded in 2020 with the purpose to <strong className="text-[#111827] font-semibold">Educate, Inspire, and to Empower</strong> the lives of those often forgotten; the marginalized, the left behind, and the most vulnerable in our society.
                 </p>
               </div>
             </ScrollReveal>
@@ -79,12 +79,12 @@ export function AboutPreview() {
                     className="object-cover object-top transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-                <figcaption className="text-xs text-[#555555] leading-relaxed space-y-1 text-center sm:text-left">
+                <figcaption className="text-xs text-[#4B5563] leading-relaxed space-y-1 text-center sm:text-left">
                   <div>
-                    <strong className="text-[#222222]">Founder and Chairman :</strong> Jalen Uboh (pictured right)
+                    <strong className="text-[#111827]">Founder and Chairman :</strong> Jalen Uboh (pictured right)
                   </div>
                   <div>
-                    <strong className="text-[#222222]">President and Executive Director:</strong> Anika Carter (pictured left)
+                    <strong className="text-[#111827]">President and Executive Director:</strong> Anika Carter (pictured left)
                   </div>
                 </figcaption>
               </figure>
@@ -99,7 +99,7 @@ export function AboutPreview() {
                 "Share your love for community",
               ].map((item, index) => (
                 <ScrollItem key={index} direction="up" distance={16} className="flex items-center gap-3.5">
-                  <div className="w-5 h-5 text-[#F6B83E] shrink-0 flex items-center justify-center">
+                  <div className="w-5 h-5 text-[#C5A059] shrink-0 flex items-center justify-center">
                     <svg
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
@@ -127,10 +127,10 @@ export function AboutPreview() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.97 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-[#F6B83E] px-8 py-6 inline-flex items-center gap-6 shadow-md rounded-xs transition-shadow duration-300 hover:shadow-xl cursor-pointer select-none"
+                  className="bg-[#C5A059] px-8 py-6 inline-flex items-center gap-6 shadow-md rounded-xs transition-shadow duration-300 hover:shadow-xl cursor-pointer select-none"
                 >
                   {/* Money Sack with Stacks of Coins SVG Icon */}
-                  <div className="text-[#222222] shrink-0">
+                  <div className="text-[#111827] shrink-0">
                     <svg
                       className="w-12 h-12"
                       viewBox="0 0 64 64"
@@ -152,10 +152,10 @@ export function AboutPreview() {
 
                   {/* Stat Number & Label */}
                   <div className="flex flex-col">
-                    <span className="font-serif text-3xl sm:text-4xl font-bold text-[#222222] leading-none tracking-tight">
+                    <span className="font-serif text-3xl sm:text-4xl font-bold text-[#111827] leading-none tracking-tight">
                       70,458
                     </span>
-                    <span className="text-xs font-semibold text-[#222222]/85 tracking-wide mt-1.5">
+                    <span className="text-xs font-semibold text-[#111827]/85 tracking-wide mt-1.5">
                       Successfull Campaigns
                     </span>
                   </div>
@@ -172,7 +172,7 @@ export function AboutPreview() {
           <div className="relative w-full max-w-3xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
             <button
               onClick={() => setVideoOpen(false)}
-              className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-[#F6B83E] hover:text-[#222222] transition-colors"
+              className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-[#C5A059] hover:text-[#111827] transition-colors"
               aria-label="Close video"
             >
               <X className="w-5 h-5" />

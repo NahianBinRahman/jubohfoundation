@@ -32,46 +32,46 @@ export default function PrivacyPage() {
             {/* Highlights Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-[#F8F6F1] p-6 rounded-xl border border-[#E8E5DD] space-y-3">
-                <div className="w-10 h-10 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center">
                   <Shield className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-[#222222]">
+                <h3 className="font-serif text-lg font-bold text-[#111827]">
                   No Selling of Data
                 </h3>
-                <p className="text-xs text-[#777777] leading-relaxed">
+                <p className="text-xs text-[#555D68] leading-relaxed">
                   We never sell, rent, lease, or trade subscriber or donor contact information to any third parties.
                 </p>
               </div>
 
               <div className="bg-[#F8F6F1] p-6 rounded-xl border border-[#E8E5DD] space-y-3">
-                <div className="w-10 h-10 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center">
                   <Lock className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-[#222222]">
+                <h3 className="font-serif text-lg font-bold text-[#111827]">
                   Server-Side Security
                 </h3>
-                <p className="text-xs text-[#777777] leading-relaxed">
+                <p className="text-xs text-[#555D68] leading-relaxed">
                   All submissions are protected by strict PostgreSQL Row-Level Security with zero public read access.
                 </p>
               </div>
 
               <div className="bg-[#F8F6F1] p-6 rounded-xl border border-[#E8E5DD] space-y-3">
-                <div className="w-10 h-10 rounded-full bg-[#F6B83E]/20 text-[#F6B83E] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[#C5A059]/20 text-[#C5A059] flex items-center justify-center">
                   <Eye className="w-5 h-5" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-[#222222]">
+                <h3 className="font-serif text-lg font-bold text-[#111827]">
                   Donor Confidentiality
                 </h3>
-                <p className="text-xs text-[#777777] leading-relaxed">
+                <p className="text-xs text-[#555D68] leading-relaxed">
                   Contributions and communications are handled in accordance with 501(c)(3) nonprofit fiduciary standards.
                 </p>
               </div>
             </div>
 
             {/* Policy Content */}
-            <div className="space-y-8 text-xs sm:text-sm text-[#555555] leading-relaxed border-t border-[#E8E5DD] pt-8">
+            <div className="space-y-8 text-xs sm:text-sm text-[#4B5563] leading-relaxed border-t border-[#E8E5DD] pt-8">
               <div className="space-y-3">
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#222222]">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#111827]">
                   1. Information We Collect
                 </h2>
                 <p>
@@ -85,7 +85,7 @@ export default function PrivacyPage() {
               </div>
 
               <div className="space-y-3">
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#222222]">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#111827]">
                   2. Use of Information
                 </h2>
                 <p>
@@ -94,7 +94,7 @@ export default function PrivacyPage() {
               </div>
 
               <div className="space-y-3">
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#222222]">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#111827]">
                   3. Data Protection & Row-Level Security
                 </h2>
                 <p>
@@ -103,14 +103,14 @@ export default function PrivacyPage() {
               </div>
 
               <div className="space-y-3">
-                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#222222]">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#111827]">
                   4. Privacy Inquiries & Opt-Out
                 </h2>
                 <p>
                   You may at any time request the removal or correction of your email address from our subscriber records by contacting us at{" "}
                   <a
                     href="mailto:info@jubohfoundation.org"
-                    className="text-[#F6B83E] font-medium hover:underline"
+                    className="text-[#C5A059] font-medium hover:underline"
                   >
                     info@jubohfoundation.org
                   </a>{" "}

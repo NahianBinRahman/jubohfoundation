@@ -29,13 +29,13 @@ export function Navbar() {
                   className={cn(
                     "text-sm font-medium tracking-wide uppercase transition-colors py-2 flex items-center gap-1",
                     isActive
-                      ? "text-[#F6B83E] font-semibold"
-                      : "text-[#222222] hover:text-[#F6B83E]"
+                      ? "text-[#C5A059] font-semibold"
+                      : "text-[#111827] hover:text-[#C5A059]"
                   )}
                 >
                   {item.label}
                   {item.children && (
-                    <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 text-neutral-400 group-hover:text-[#F6B83E]" />
+                    <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 text-neutral-400 group-hover:text-[#C5A059]" />
                   )}
                 </Link>
 
@@ -47,7 +47,7 @@ export function Navbar() {
                         <Link
                           key={sub.label}
                           href={sub.href}
-                          className="block px-4 py-2.5 text-xs font-medium text-[#222222] hover:bg-[#F8F6F1] hover:text-[#F6B83E] transition-colors"
+                          className="block px-4 py-2.5 text-xs font-medium text-[#111827] hover:bg-[#F8F6F1] hover:text-[#C5A059] transition-colors"
                         >
                           {sub.label}
                         </Link>
@@ -64,14 +64,14 @@ export function Navbar() {
         <div className="flex items-center gap-3 md:hidden">
           <Link
             href="/donate"
-            className="inline-flex items-center gap-1 bg-[#F6B83E] text-[#222222] font-semibold px-3 py-1.5 rounded-sm text-xs"
+            className="inline-flex items-center gap-1 bg-[#C5A059] text-[#111827] font-semibold px-3 py-1.5 rounded-sm text-xs"
           >
             <Heart className="w-3.5 h-3.5 fill-current" />
             DONATE
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-[#222222] hover:text-[#F6B83E] focus:outline-none"
+            className="p-2 text-[#111827] hover:text-[#C5A059] focus:outline-none"
             aria-label="Toggle Navigation"
           >
             {mobileMenuOpen ? (
@@ -91,7 +91,7 @@ export function Navbar() {
               <Link
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-sm font-semibold text-[#222222] hover:text-[#F6B83E] py-1"
+                className="block text-sm font-semibold text-[#111827] hover:text-[#C5A059] py-1"
               >
                 {item.label}
               </Link>
@@ -102,7 +102,7 @@ export function Navbar() {
                       key={sub.label}
                       href={sub.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block text-xs text-[#777777] hover:text-[#F6B83E] py-1"
+                      className="block text-xs text-[#555D68] hover:text-[#C5A059] py-1"
                     >
                       {sub.label}
                     </Link>

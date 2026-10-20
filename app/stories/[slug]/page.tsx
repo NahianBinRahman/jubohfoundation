@@ -53,24 +53,24 @@ export default async function StoryDetailPage({ params }: StoryDetailPageProps) 
 
       <main className="flex-1">
         {/* Breadcrumb Header */}
-        <div className="bg-[#222222] text-white py-12 md:py-16">
+        <div className="bg-[#111827] text-white py-12 md:py-16">
           <div className="container-custom">
             <div className="max-w-4xl space-y-4">
               <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-neutral-400">
                 <Link href="/" className="hover:text-white transition-colors">
                   Home
                 </Link>
-                <ChevronRight className="w-3.5 h-3.5 text-[#F6B83E]" />
+                <ChevronRight className="w-3.5 h-3.5 text-[#C5A059]" />
                 <Link href="/stories" className="hover:text-white transition-colors">
                   Stories
                 </Link>
-                <ChevronRight className="w-3.5 h-3.5 text-[#F6B83E]" />
+                <ChevronRight className="w-3.5 h-3.5 text-[#C5A059]" />
                 <span className="text-neutral-300 truncate max-w-[200px] sm:max-w-none">
                   {story.title}
                 </span>
               </nav>
 
-              <div className="inline-block bg-[#F6B83E] text-[#222222] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-xs">
+              <div className="inline-block bg-[#C5A059] text-[#111827] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-xs">
                 {story.category}
               </div>
 
@@ -80,12 +80,12 @@ export default async function StoryDetailPage({ params }: StoryDetailPageProps) 
 
               <div className="flex flex-wrap items-center gap-5 text-xs text-neutral-400 pt-2 border-t border-white/10">
                 <div className="flex items-center gap-1.5">
-                  <Calendar className="w-3.5 h-3.5 text-[#F6B83E]" />
+                  <Calendar className="w-3.5 h-3.5 text-[#C5A059]" />
                   <span>{story.formattedDate}</span>
                 </div>
                 {story.readingTime && (
                   <div className="flex items-center gap-1.5">
-                    <Clock className="w-3.5 h-3.5 text-[#F6B83E]" />
+                    <Clock className="w-3.5 h-3.5 text-[#C5A059]" />
                     <span>{story.readingTime}</span>
                   </div>
                 )}
@@ -118,7 +118,7 @@ export default async function StoryDetailPage({ params }: StoryDetailPageProps) 
                 </div>
 
                 {/* Excerpt Lead */}
-                <p className="font-serif text-lg sm:text-xl text-[#222222] font-medium leading-relaxed italic border-l-4 border-[#F6B83E] pl-4 py-1">
+                <p className="font-serif text-lg sm:text-xl text-[#111827] font-medium leading-relaxed italic border-l-4 border-[#C5A059] pl-4 py-1">
                   {story.excerpt}
                 </p>
 
@@ -133,14 +133,14 @@ export default async function StoryDetailPage({ params }: StoryDetailPageProps) 
                 <div className="pt-8 border-t border-[#E8E5DD] flex items-center justify-between flex-wrap gap-4">
                   <Link
                     href="/stories"
-                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#222222] hover:text-[#F6B83E] transition-colors"
+                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#111827] hover:text-[#C5A059] transition-colors"
                   >
                     <ArrowLeft className="w-4 h-4" />
                     <span>Back to All Stories</span>
                   </Link>
 
-                  <div className="flex items-center gap-2 text-xs text-[#777777]">
-                    <Share2 className="w-4 h-4 text-[#F6B83E]" />
+                  <div className="flex items-center gap-2 text-xs text-[#555D68]">
+                    <Share2 className="w-4 h-4 text-[#C5A059]" />
                     <span>Share This Story</span>
                   </div>
                 </div>

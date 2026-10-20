@@ -57,16 +57,16 @@ export function ValuesGrid() {
             return (
               <div
                 key={val.title}
-                className="bg-white p-7 rounded-lg border border-[#E8E5DD] hover:border-[#F6B83E] shadow-2xs hover:shadow-md transition-all duration-300 text-center flex flex-col justify-between group"
+                className="bg-white p-7 rounded-lg border border-[#E8E5DD] hover:border-[#C5A059] shadow-2xs hover:shadow-md transition-all duration-300 text-center flex flex-col justify-between group"
               >
                 <div>
-                  <div className="w-14 h-14 rounded-full bg-[#F8F6F1] border border-[#E8E5DD] flex items-center justify-center text-[#F6B83E] mx-auto mb-5 group-hover:bg-[#F6B83E] group-hover:text-[#222222] transition-colors duration-200">
+                  <div className="w-14 h-14 rounded-full bg-[#F8F6F1] border border-[#E8E5DD] flex items-center justify-center text-[#C5A059] mx-auto mb-5 group-hover:bg-[#C5A059] group-hover:text-[#111827] transition-colors duration-200">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-serif text-lg font-bold text-[#222222] mb-2.5">
+                  <h3 className="font-serif text-lg font-bold text-[#111827] mb-2.5">
                     {val.title}
                   </h3>
-                  <p className="text-xs text-[#777777] leading-relaxed">
+                  <p className="text-xs text-[#555D68] leading-relaxed">
                     {val.description}
                   </p>
                 </div>

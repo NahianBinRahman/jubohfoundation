@@ -31,16 +31,16 @@ export function DesktopNavigation() {
                 className={cn(
                   "text-xs uppercase tracking-wider font-bold transition-colors flex items-center gap-1 select-none",
                   isActive
-                    ? "text-[#F6B83E]"
-                    : "text-[#222222] hover:text-[#F6B83E]"
+                    ? "text-[#C5A059]"
+                    : "text-[#111827] hover:text-[#C5A059]"
                 )}
                 aria-expanded={openDropdown === item.label}
               >
                 {item.label}
                 <ChevronDown
                   className={cn(
-                    "w-3.5 h-3.5 transition-transform duration-200 text-neutral-400 group-hover:text-[#F6B83E]",
-                    openDropdown === item.label ? "rotate-180 text-[#F6B83E]" : ""
+                    "w-3.5 h-3.5 transition-transform duration-200 text-neutral-400 group-hover:text-[#C5A059]",
+                    openDropdown === item.label ? "rotate-180 text-[#C5A059]" : ""
                   )}
                 />
               </Link>
@@ -55,7 +55,7 @@ export function DesktopNavigation() {
                 )}
               >
                 <div className="bg-white rounded-md shadow-xl border border-[#E8E5DD] py-2 overflow-hidden">
-                  <div className="px-4 py-1.5 text-[10px] uppercase font-bold tracking-wider text-[#F6B83E] border-b border-neutral-100 bg-[#F8F6F1]/60 mb-1">
+                  <div className="px-4 py-1.5 text-[10px] uppercase font-bold tracking-wider text-[#C5A059] border-b border-neutral-100 bg-[#F8F6F1]/60 mb-1">
                     Juboh Initiatives
                   </div>
                   {item.children.map((sub) => {
@@ -67,8 +67,8 @@ export function DesktopNavigation() {
                         className={cn(
                           "block px-4 py-2 text-xs font-semibold transition-all duration-150 border-l-2",
                           isSubActive
-                            ? "border-[#F6B83E] bg-[#F8F6F1] text-[#222222]"
-                            : "border-transparent text-[#444444] hover:border-[#F6B83E] hover:bg-[#F8F6F1] hover:text-[#222222]"
+                            ? "border-[#C5A059] bg-[#F8F6F1] text-[#111827]"
+                            : "border-transparent text-[#444444] hover:border-[#C5A059] hover:bg-[#F8F6F1] hover:text-[#111827]"
                         )}
                       >
                         {sub.label}
@@ -88,8 +88,8 @@ export function DesktopNavigation() {
             className={cn(
               "text-xs uppercase tracking-wider font-bold transition-colors py-2 relative",
               isActive
-                ? "text-[#F6B83E]"
-                : "text-[#222222] hover:text-[#F6B83E]"
+                ? "text-[#C5A059]"
+                : "text-[#111827] hover:text-[#C5A059]"
             )}
           >
             {item.label}

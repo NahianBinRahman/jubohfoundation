@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none">
   <defs>
     <linearGradient id="jubohGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFDE82" />
-      <stop offset="45%" stop-color="#F6B83E" />
-      <stop offset="100%" stop-color="#D48B14" />
+      <stop offset="0%" stop-color="#E6CE9B" />
+      <stop offset="45%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#9E7B44" />
     </linearGradient>
     <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFF2B8" />
-      <stop offset="60%" stop-color="#F6B83E" />
-      <stop offset="100%" stop-color="#D48B14" />
+      <stop offset="0%" stop-color="#F3E6C8" />
+      <stop offset="60%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#9E7B44" />
     </radialGradient>
     <!-- A graceful caring open hand with wrist, palm, thumb and contoured fingers -->
     <g id="hand-unity">
@@ -21,8 +21,8 @@
   </defs>
 
   <!-- Outer protective unity circle -->
-  <circle cx="100" cy="100" r="92" stroke="#F6B83E" stroke-width="2" stroke-dasharray="3 3" opacity="0.45" />
-  <circle cx="100" cy="100" r="86" stroke="#F6B83E" stroke-width="1.2" opacity="0.3" />
+  <circle cx="100" cy="100" r="92" stroke="#C5A059" stroke-width="2" stroke-dasharray="3 3" opacity="0.45" />
+  <circle cx="100" cy="100" r="86" stroke="#C5A059" stroke-width="1.2" opacity="0.3" />
 
   <!-- 6 hands joined radially -->
   <use href="#hand-unity" transform="rotate(0 100 100)" />
@@ -34,5 +34,5 @@
 
   <!-- Center radiating unity star/circle -->
   <circle cx="100" cy="100" r="7" fill="url(#centerGlow)" />
-  <circle cx="100" cy="100" r="13" stroke="#F6B83E" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.7" />
+  <circle cx="100" cy="100" r="13" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.7" />
 </svg>

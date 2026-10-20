@@ -38,9 +38,9 @@ export function HomeHero() {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[68px] font-bold tracking-tight text-white mb-6 leading-[1.14]"
         >
-          Best Way To Make A <span className="text-[#F6B83E]">Difference</span>
+          Best Way To Make A <span className="text-[#C5A059]">Difference</span>
           <br className="hidden sm:inline" /> In The{" "}
-          <span className="text-[#F6B83E]">Lives</span> Of Others
+          <span className="text-[#C5A059]">Lives</span> Of Others
         </motion.h1>
 
         {/* Supporting Mission Subtitle */}
@@ -71,7 +71,7 @@ export function HomeHero() {
           >
             <Link
               href="/donate"
-              className="inline-flex items-center justify-center bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold text-xs uppercase tracking-widest px-9 py-4 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer"
+              className="inline-flex items-center justify-center bg-[#C5A059] hover:bg-[#B38E46] text-[#111827] font-bold text-xs uppercase tracking-widest px-9 py-4 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer"
             >
               DONATE NOW
             </Link>

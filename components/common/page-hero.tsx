@@ -41,7 +41,7 @@ export function PageHero({
   return (
     <section
       className={cn(
-        "relative w-full bg-[#222222] text-white overflow-hidden flex items-center",
+        "relative w-full bg-[#111827] text-white overflow-hidden flex items-center",
         heightClasses,
         className
       )}
@@ -57,7 +57,7 @@ export function PageHero({
           className="object-cover object-center brightness-[0.4] contrast-[1.05]"
         />
         {/* Subtle Charcoal Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#222222] via-[#222222]/60 to-[#222222]/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#111827] via-[#111827]/60 to-[#111827]/80" />
       </div>
 
       {/* Hero Content */}
@@ -90,23 +90,23 @@ export function PageHero({
           >
             {breadcrumbs.map((crumb, idx) => (
               <React.Fragment key={crumb.label}>
-                {idx > 0 && <ChevronRight className="w-3.5 h-3.5 text-[#F6B83E] shrink-0" />}
+                {idx > 0 && <ChevronRight className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />}
                 {crumb.href ? (
                   <Link
                     href={crumb.href}
-                    className="hover:text-[#F6B83E] transition-colors whitespace-nowrap"
+                    className="hover:text-[#C5A059] transition-colors whitespace-nowrap"
                   >
                     {crumb.label}
                   </Link>
                 ) : (
-                  <span className="text-[#F6B83E] font-semibold whitespace-nowrap">
+                  <span className="text-[#C5A059] font-semibold whitespace-nowrap">
                     {crumb.label}
                   </span>
                 )}
               </React.Fragment>
             ))}
-            <ChevronRight className="w-3.5 h-3.5 text-[#F6B83E] shrink-0" />
-            <span className="text-[#F6B83E] font-semibold whitespace-nowrap">
+            <ChevronRight className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
+            <span className="text-[#C5A059] font-semibold whitespace-nowrap">
               {title}
             </span>
           </nav>

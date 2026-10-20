@@ -5,9 +5,9 @@ export function DonationCTA() {
   return (
     <section className="py-20 md:py-24 bg-[#F8F6F1] border-t border-[#E8E5DD]">
       <div className="container-custom">
-        <div className="bg-[#222222] rounded-2xl p-8 sm:p-12 md:p-16 text-center text-white relative overflow-hidden space-y-6">
+        <div className="bg-[#111827] rounded-2xl p-8 sm:p-12 md:p-16 text-center text-white relative overflow-hidden space-y-6">
           <div className="max-w-2xl mx-auto space-y-3">
-            <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#F6B83E] block">
+            <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C5A059] block">
               Ubuntu Philosophy In Action
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">

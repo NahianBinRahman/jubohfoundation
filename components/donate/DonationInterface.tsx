@@ -75,13 +75,13 @@ export function DonationInterface() {
           {/* Left Column: Trust & Stewardship Editorial */}
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-3">
-              <span className="eyebrow-script text-xl text-[#F6B83E] block">
+              <span className="eyebrow-script text-xl text-[#C5A059] block">
                 Direct Community Support
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#222222] tracking-tight leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#111827] tracking-tight leading-tight">
                 Invest in Sustainable Community Empowerment
               </h2>
-              <p className="text-sm md:text-base text-[#777777] leading-relaxed">
+              <p className="text-sm md:text-base text-[#555D68] leading-relaxed">
                 Your charitable contribution directly supports our mission to educate, inspire, and empower individuals and communities across the United States and globally.
               </p>
             </div>
@@ -89,42 +89,42 @@ export function DonationInterface() {
             {/* Key Trust Highlights */}
             <div className="space-y-4 pt-2">
               <div className="flex items-start gap-4 p-5 rounded-xl bg-[#F8F6F1] border border-[#E8E5DD]">
-                <div className="w-10 h-10 rounded-full bg-white border border-[#E8E5DD] flex items-center justify-center text-[#F6B83E] shrink-0 shadow-2xs">
+                <div className="w-10 h-10 rounded-full bg-white border border-[#E8E5DD] flex items-center justify-center text-[#C5A059] shrink-0 shadow-2xs">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
-                  <h4 className="font-serif font-bold text-base text-[#222222]">
+                  <h4 className="font-serif font-bold text-base text-[#111827]">
                     100% Tax-Deductible Contribution
                   </h4>
-                  <p className="text-xs text-[#777777] leading-relaxed">
+                  <p className="text-xs text-[#555D68] leading-relaxed">
                     JUBOH Foundation, Inc. is a United States IRS-recognized 501(c)(3) nonprofit organization (est. 2020). All charitable donations qualify for federal tax deductions to the extent permitted by law.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4 p-5 rounded-xl bg-[#F8F6F1] border border-[#E8E5DD]">
-                <div className="w-10 h-10 rounded-full bg-white border border-[#E8E5DD] flex items-center justify-center text-[#F6B83E] shrink-0 shadow-2xs">
+                <div className="w-10 h-10 rounded-full bg-white border border-[#E8E5DD] flex items-center justify-center text-[#C5A059] shrink-0 shadow-2xs">
                   <Heart className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
-                  <h4 className="font-serif font-bold text-base text-[#222222]">
+                  <h4 className="font-serif font-bold text-base text-[#111827]">
                     Ubuntu Philosophy Stewardship
                   </h4>
-                  <p className="text-xs text-[#777777] leading-relaxed">
+                  <p className="text-xs text-[#555D68] leading-relaxed">
                     Guided by the African philosophy &ldquo;I am because we are,&rdquo; every gift is managed with rigorous governance and channeled into high-impact, self-sustaining community initiatives.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4 p-5 rounded-xl bg-[#F8F6F1] border border-[#E8E5DD]">
-                <div className="w-10 h-10 rounded-full bg-white border border-[#E8E5DD] flex items-center justify-center text-[#F6B83E] shrink-0 shadow-2xs">
+                <div className="w-10 h-10 rounded-full bg-white border border-[#E8E5DD] flex items-center justify-center text-[#C5A059] shrink-0 shadow-2xs">
                   <Sparkles className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
-                  <h4 className="font-serif font-bold text-base text-[#222222]">
+                  <h4 className="font-serif font-bold text-base text-[#111827]">
                     Holistic Program Impact
                   </h4>
-                  <p className="text-xs text-[#777777] leading-relaxed">
+                  <p className="text-xs text-[#555D68] leading-relaxed">
                     Contributions strengthen small business academies, youth college tours, CHDO workforce housing developments, and clean water micro-infrastructure.
                   </p>
                 </div>
@@ -138,31 +138,31 @@ export function DonationInterface() {
               {/* Card Header */}
               <div className="space-y-2 border-b border-[#F8F6F1] pb-5">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#F6B83E] block">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C5A059] block">
                     Support Our Mission
                   </span>
-                  <div className="flex items-center gap-1.5 text-[11px] text-[#777777] bg-[#F8F6F1] px-2.5 py-1 rounded-full border border-[#E8E5DD]">
-                    <Lock className="w-3 h-3 text-[#F6B83E]" />
+                  <div className="flex items-center gap-1.5 text-[11px] text-[#555D68] bg-[#F8F6F1] px-2.5 py-1 rounded-full border border-[#E8E5DD]">
+                    <Lock className="w-3 h-3 text-[#C5A059]" />
                     <span>Secure Donation</span>
                   </div>
                 </div>
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#222222]">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#111827]">
                   Make Your Contribution
                 </h3>
-                <p className="text-xs text-[#777777]">
+                <p className="text-xs text-[#555D68]">
                   Select an amount to invest in community empowerment.
                 </p>
               </div>
 
               {/* Frequency Selector: One-Time */}
               <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-wider text-[#222222] block">
+                <label className="text-xs font-bold uppercase tracking-wider text-[#111827] block">
                   Donation Frequency
                 </label>
                 <div className="grid grid-cols-2 gap-2">
                   <button
                     type="button"
-                    className="py-2.5 px-4 rounded-md text-xs font-bold uppercase tracking-wider bg-[#222222] text-[#F6B83E] shadow-xs cursor-default flex items-center justify-center gap-1.5"
+                    className="py-2.5 px-4 rounded-md text-xs font-bold uppercase tracking-wider bg-[#111827] text-[#C5A059] shadow-xs cursor-default flex items-center justify-center gap-1.5"
                   >
                     <CheckCircle2 className="w-3.5 h-3.5" />
                     <span>One-Time Gift</span>
@@ -179,10 +179,10 @@ export function DonationInterface() {
               {/* Amount Selection Grid */}
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <label className="text-xs font-bold uppercase tracking-wider text-[#222222] block">
+                  <label className="text-xs font-bold uppercase tracking-wider text-[#111827] block">
                     Select Amount (USD) <span className="text-rose-500">*</span>
                   </label>
-                  <span className="text-xs font-bold text-[#222222]">
+                  <span className="text-xs font-bold text-[#111827]">
                     Selected: ${currentAmount || 0}
                   </span>
                 </div>
@@ -197,8 +197,8 @@ export function DonationInterface() {
                         onClick={() => handlePresetClick(amt)}
                         className={`py-3.5 px-4 rounded-lg font-serif text-lg font-bold transition-all duration-200 cursor-pointer ${
                           isSelected
-                            ? "bg-[#F6B83E] text-[#222222] shadow-sm border-2 border-[#F6B83E] scale-[1.02]"
-                            : "bg-[#F8F6F1] text-[#222222] border border-[#E8E5DD] hover:border-[#F6B83E]/60 hover:bg-white"
+                            ? "bg-[#C5A059] text-[#111827] shadow-sm border-2 border-[#C5A059] scale-[1.02]"
+                            : "bg-[#F8F6F1] text-[#111827] border border-[#E8E5DD] hover:border-[#C5A059]/60 hover:bg-white"
                         }`}
                       >
                         ${amt}
@@ -210,7 +210,7 @@ export function DonationInterface() {
                 {/* Custom Amount Input */}
                 <div className="pt-2">
                   <div className="relative">
-                    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-sm font-bold text-[#222222]">
+                    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-sm font-bold text-[#111827]">
                       $
                     </span>
                     <Input
@@ -221,7 +221,7 @@ export function DonationInterface() {
                       onChange={handleCustomChange}
                       className={`pl-8 h-12 text-sm font-medium ${
                         selectedPreset === "custom"
-                          ? "border-[#F6B83E] ring-2 ring-[#F6B83E]/20"
+                          ? "border-[#C5A059] ring-2 ring-[#C5A059]/20"
                           : ""
                       }`}
                     />
@@ -237,7 +237,7 @@ export function DonationInterface() {
               {/* Donor Information Form */}
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 pt-2">
                 <div className="space-y-1.5">
-                  <label htmlFor="donorName" className="text-xs font-bold uppercase tracking-wider text-[#222222] block">
+                  <label htmlFor="donorName" className="text-xs font-bold uppercase tracking-wider text-[#111827] block">
                     Full Name <span className="text-rose-500">*</span>
                   </label>
                   <Input
@@ -254,7 +254,7 @@ export function DonationInterface() {
                 </div>
 
                 <div className="space-y-1.5">
-                  <label htmlFor="donorEmail" className="text-xs font-bold uppercase tracking-wider text-[#222222] block">
+                  <label htmlFor="donorEmail" className="text-xs font-bold uppercase tracking-wider text-[#111827] block">
                     Email Address <span className="text-rose-500">*</span>
                   </label>
                   <Input
@@ -272,18 +272,18 @@ export function DonationInterface() {
                 </div>
 
                 {/* Transparent Payment Security Notice */}
-                <div className="bg-[#F8F6F1] border border-[#E8E5DD] rounded-xl p-4 flex items-start gap-3 text-xs text-[#555555]">
-                  <Info className="w-4 h-4 text-[#F6B83E] shrink-0 mt-0.5" />
+                <div className="bg-[#F8F6F1] border border-[#E8E5DD] rounded-xl p-4 flex items-start gap-3 text-xs text-[#4B5563]">
+                  <Info className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
                   <div className="space-y-1">
-                    <span className="font-semibold text-[#222222] block">
+                    <span className="font-semibold text-[#111827] block">
                       Payment Gateway Integration Notice
                     </span>
                     <p className="leading-relaxed">
                       Our official merchant donation gateway is scheduled for production integration. Online card processing is currently paused to safeguard your payment details. Contributions can be arranged directly via{" "}
-                      <a href="mailto:info@jubohfoundation.org" className="underline font-bold text-[#222222] hover:text-[#F6B83E]">
+                      <a href="mailto:info@jubohfoundation.org" className="underline font-bold text-[#111827] hover:text-[#C5A059]">
                         info@jubohfoundation.org
                       </a>{" "}
-                      or by calling <span className="font-semibold text-[#222222]">(800) JUBOH-ORG</span>.
+                      or by calling <span className="font-semibold text-[#111827]">(800) JUBOH-ORG</span>.
                     </p>
                   </div>
                 </div>
@@ -291,7 +291,7 @@ export function DonationInterface() {
                 {/* Local Feedback Banner when submitted */}
                 {attemptedSubmit && (
                   <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-start gap-3 text-xs text-amber-900 animate-in fade-in-50">
-                    <AlertCircle className="w-4 h-4 text-[#F6B83E] shrink-0 mt-0.5" />
+                    <AlertCircle className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
                     <div className="space-y-1">
                       <span className="font-semibold block">
                         Pledge Information Recorded Locally (${currentAmount})
@@ -307,7 +307,7 @@ export function DonationInterface() {
                 <div className="pt-2">
                   <Button
                     type="submit"
-                    className="w-full bg-[#F6B83E] hover:bg-[#e0a32e] text-[#222222] font-bold py-4 text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
+                    className="w-full bg-[#C5A059] hover:bg-[#B38E46] text-[#111827] font-bold py-4 text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
                   >
                     <span>Continue to Secure Donation</span>
                     <ArrowRight className="w-4 h-4" />

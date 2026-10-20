@@ -46,17 +46,17 @@ export function DonationIntroduction() {
                 sizes="(max-width: 1024px) 100vw, 45vw"
                 className="object-cover"
               />
-              <div className="absolute top-4 left-4 bg-[#222222]/90 backdrop-blur-xs text-[#F6B83E] text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-sm">
+              <div className="absolute top-4 left-4 bg-[#111827]/90 backdrop-blur-xs text-[#C5A059] text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-sm">
                 Ubuntu Community Impact
               </div>
             </div>
 
             {/* Supporting Caption Pill */}
             <div className="mt-4 p-4 rounded-xl bg-white border border-[#E8E5DD] shadow-2xs flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-[#F8F6F1] flex items-center justify-center text-[#F6B83E] shrink-0">
+              <div className="w-8 h-8 rounded-full bg-[#F8F6F1] flex items-center justify-center text-[#C5A059] shrink-0">
                 <Sparkles className="w-4 h-4" />
               </div>
-              <p className="text-xs text-[#777777] italic leading-snug">
+              <p className="text-xs text-[#555D68] italic leading-snug">
                 &ldquo;I am because we are&rdquo; &mdash; Grounded in mutual respect, collective growth, and lasting community resilience.
               </p>
             </div>
@@ -65,15 +65,15 @@ export function DonationIntroduction() {
           {/* Right Column: Editorial Copy */}
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-2">
-              <span className="eyebrow-script text-xl text-[#F6B83E] block">
+              <span className="eyebrow-script text-xl text-[#C5A059] block">
                 The Power of Giving
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#222222] tracking-tight leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#111827] tracking-tight leading-tight">
                 Together, We Can Build a Brighter Future
               </h2>
             </div>
 
-            <p className="text-sm md:text-base text-[#777777] leading-relaxed">
+            <p className="text-sm md:text-base text-[#555D68] leading-relaxed">
               At the JUBOH Foundation, every resource entrusted to our organization is directed toward systematic, sustainable empowerment. Through community-driven partnerships, we break cycles of generational disparity by investing in five vital pillars:
             </p>
 
@@ -81,14 +81,14 @@ export function DonationIntroduction() {
             <div className="space-y-3.5 pt-2">
               {PILLARS.map((pillar) => (
                 <div key={pillar.title} className="flex items-start gap-3 text-left">
-                  <div className="w-6 h-6 rounded-full bg-white border border-[#E8E5DD] flex items-center justify-center text-[#F6B83E] shrink-0 mt-0.5 shadow-2xs">
+                  <div className="w-6 h-6 rounded-full bg-white border border-[#E8E5DD] flex items-center justify-center text-[#C5A059] shrink-0 mt-0.5 shadow-2xs">
                     <CheckCircle2 className="w-3.5 h-3.5" />
                   </div>
                   <div>
-                    <h4 className="text-xs sm:text-sm font-bold text-[#222222]">
+                    <h4 className="text-xs sm:text-sm font-bold text-[#111827]">
                       {pillar.title}
                     </h4>
-                    <p className="text-xs text-[#777777] leading-relaxed">
+                    <p className="text-xs text-[#555D68] leading-relaxed">
                       {pillar.desc}
                     </p>
                   </div>
